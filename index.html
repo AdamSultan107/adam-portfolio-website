@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Adam Sultan is a full-stack software engineer and Carnegie Mellon University student focused on product-minded engineering, UI/UX, and reliable systems."
+    />
+    <title>Adam Sultan | Full-Stack Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Adam Sultan</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="./assets/Adam_Sultan_Resume.pdf" target="_blank" rel="noopener"
+              >Resume</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Adam Sultan</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -33,40 +42,54 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a
+              href="./assets/Adam_Sultan_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              onclick="toggleMenu()"
+              >Resume</a
+            >
+          </li>
         </div>
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Adam Sultan</h1>
+        <p class="section__text__p2">Full-Stack Software Engineer</p>
+        <p class="section__text__p3">
+          Carnegie Mellon University · Information Systems + HCI
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Adam_Sultan_Resume.pdf')"
           >
-            Download CV
+            Download Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
+        </div>
+        <div class="hero-highlights">
+          <div class="hero-chip">$430K+ donations processed</div>
+          <div class="hero-chip">12,000+ lbs of e-waste tracked</div>
+          <div class="hero-chip">16 PRs merged in open source</div>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/adamksultan/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/AdamSultan107'"
           />
         </div>
       </div>
@@ -75,13 +98,6 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +107,9 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>Software Engineering Intern</p>
+              <p>Allegheny County DHS</p>
+              <p>Board Director, The Silicon Project</p>
             </div>
             <div class="details-container">
               <img
@@ -100,17 +118,20 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>B.S. Information Systems (concentration in AI Management) + HCI</p>
+              <p>Carnegie Mellon University '27</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I am a junior at Carnegie Mellon University studying Information Systems and
+              Human-Computer Interaction. I build full-stack products with Next.js,
+              TypeScript, Django, and Supabase, focusing on clean UX and reliable systems.
+            </p>
+            <br />
+            <p>
+              I am based in New York and Pittsburgh and love shipping products that
+              help real people. If you want to collaborate, feel free to reach out.
             </p>
           </div>
         </div>
@@ -123,129 +144,79 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section__text__p1">Where I Have Shipped</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+        <div class="experience-grid">
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>Allegheny County DHS</h2>
+              <p class="experience-role">
+                Software Engineering Intern · Analytics, Technology, and Planning
+              </p>
+              <p class="experience-meta">Pittsburgh, PA · Feb 2026 - Present</p>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            <ul class="experience-list">
+              <li>
+                Engineering a full-stack "Report Issue" module with React, CSS,
+                and Django integrated with Jira for structured triage.
+              </li>
+              <li>
+                Integrated PostHog analytics and contributed via GitHub PRs and
+                code review to track reporting trends.
+              </li>
+            </ul>
+          </article>
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>The Silicon Project</h2>
+              <p class="experience-role">Board Director and Lead Developer</p>
+              <p class="experience-meta">New York, NY · Jun 2022 - Present</p>
             </div>
+            <ul class="experience-list">
+              <li>
+                Co-architected the nonprofit platform with Next.js and
+                Supabase, including an internal portal and Stripe store.
+              </li>
+              <li>
+                Built secure donor and inventory systems enabling $430K+ in
+                donations and 12,000+ lbs of e-waste processing.
+              </li>
+            </ul>
+          </article>
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>Intelliminds</h2>
+              <p class="experience-role">Founding Software Engineer</p>
+              <p class="experience-meta">New York, NY · Aug 2023 - Feb 2025</p>
+            </div>
+            <ul class="experience-list">
+              <li>
+                Built a custom CRM in Next.js, TypeScript, and Supabase to
+                automate client scheduling, cutting coordination time by 50%.
+              </li>
+              <li>
+                Led Agile sprints and shipped SEO and analytics features that
+                drove 1,000+ unique visits.
+              </li>
+            </ul>
+          </article>
+        </div>
+        <div class="skills-strip">
+          <h2 class="experience-sub-title">Toolbox</h2>
+          <div class="skills-list">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
           </div>
         </div>
       </div>
@@ -261,75 +232,111 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Project 1"
+                alt="The Silicon Project platform"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">
+              The Silicon Project Platform
+            </h2>
+            <p class="project-description">
+              Full-stack nonprofit platform with internal tools and a
+              Stripe-powered store for hardware refurbishments and donations.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>Supabase</span>
+              <span>Stripe</span>
+              <span>Postgres</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://www.thesiliconproject.org/'"
               >
-                Github
+                Website
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AdamSultan107'"
               >
-                Live Demo
+                GitHub
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="NodeBB anonymous posting plugin"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">
+              NodeBB Anonymous Posting Plugin
+            </h2>
+            <p class="project-description">
+              Built a "Post Anonymously" plugin with permissions, hooks, admin
+              settings, and CI hardening with mutation testing.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Redis</span>
+              <span>GitHub Actions</span>
+              <span>Stryker</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/NodeBB/NodeBB'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AdamSultan107'"
               >
-                Live Demo
+                PRs
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card">
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
-                alt="Project 3"
+                alt="Systems programming projects"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">
+              Systems Programming Suite
+            </h2>
+            <p class="project-description">
+              Built a concurrent HTTP proxy and a 64-bit memory allocator with
+              robust parsing, synchronization, and heap validation.
+            </p>
+            <div class="project-tags">
+              <span>C</span>
+              <span>POSIX Sockets</span>
+              <span>Pthreads</span>
+              <span>Valgrind</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AdamSultan107'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='./#contact'"
               >
-                Live Demo
+                Details
               </button>
             </div>
           </div>
@@ -341,7 +348,7 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
-    </section>
+    </section> 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -352,7 +359,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +367,15 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/adamksultan/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/AdamSultan107">GitHub</a></p>
         </div>
       </div>
     </section>
@@ -375,7 +390,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Adam Sultan. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
