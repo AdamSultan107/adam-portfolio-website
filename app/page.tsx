@@ -110,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section" id="skills">
+        <section className="section skills-section" id="skills">
           <div className="section-heading">
             <p className="eyebrow">Toolkit</p>
             <h2>What I Build With</h2>
@@ -118,43 +118,114 @@ export default function Home() {
               A mix of product engineering, systems, and community-facing work.
             </p>
           </div>
-          <div className="skills-grid">
-            <div className="skill-group">
-              <h3>Programming</h3>
-              <ul>
-                <li>TypeScript</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Ruby</li>
-                <li>C</li>
-              </ul>
+          <div className="skills-stack">
+            <div className="skills-row">
+              <div className="skills-label">Programming</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-python-plain" aria-hidden="true" />
+                  <span>Python</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-javascript-plain" aria-hidden="true" />
+                  <span>JavaScript</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-typescript-plain" aria-hidden="true" />
+                  <span>TypeScript</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-c-plain" aria-hidden="true" />
+                  <span>C</span>
+                </div>
+              </div>
             </div>
-            <div className="skill-group">
-              <h3>Frontend</h3>
-              <ul>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>HTML & CSS</li>
-                <li>Design Systems</li>
-              </ul>
+            <div className="skills-row">
+              <div className="skills-label">Frontend</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-react-original" aria-hidden="true" />
+                  <span>React</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-nextjs-original" aria-hidden="true" />
+                  <span>Next.js</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-html5-plain" aria-hidden="true" />
+                  <span>HTML5</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-css3-plain" aria-hidden="true" />
+                  <span>CSS3</span>
+                </div>
+              </div>
             </div>
-            <div className="skill-group">
-              <h3>Backend</h3>
-              <ul>
-                <li>Django</li>
-                <li>Node.js</li>
-                <li>Ruby on Rails</li>
-                <li>REST APIs</li>
-              </ul>
+            <div className="skills-row">
+              <div className="skills-label">Backend</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-rails-plain" aria-hidden="true" />
+                  <span>Ruby on Rails</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-nodejs-plain" aria-hidden="true" />
+                  <span>Node.js</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-django-plain" aria-hidden="true" />
+                  <span>Django</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-ruby-plain" aria-hidden="true" />
+                  <span>Ruby</span>
+                </div>
+              </div>
             </div>
-            <div className="skill-group">
-              <h3>Data + Tools</h3>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>Supabase</li>
-                <li>Git & GitHub</li>
-                <li>Docker</li>
-              </ul>
+            <div className="skills-row">
+              <div className="skills-label">Database</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-mongodb-plain" aria-hidden="true" />
+                  <span>MongoDB</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-postgresql-plain" aria-hidden="true" />
+                  <span>PostgreSQL</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-firebase-plain" aria-hidden="true" />
+                  <span>Firebase</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-redis-plain" aria-hidden="true" />
+                  <span>Redis</span>
+                </div>
+              </div>
+            </div>
+            <div className="skills-row">
+              <div className="skills-label">Tools</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-git-plain" aria-hidden="true" />
+                  <span>Git</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-docker-plain" aria-hidden="true" />
+                  <span>Docker</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-github-original" aria-hidden="true" />
+                  <span>GitHub</span>
+                </div>
+                <div className="skill-item">
+                  <i
+                    className="devicon-amazonwebservices-plain"
+                    aria-hidden="true"
+                  />
+                  <span>AWS</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
