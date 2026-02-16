@@ -280,8 +280,8 @@ export default function Home() {
               </p>
               <div className="tag-row">
                 <span>Next.js</span>
-                <span>Supabase</span>
-                <span>Stripe</span>
+                <span>PostgreSQL + Supabase</span>
+                <span>Stripe API</span>
               </div>
               <a
                 className="text-link"
@@ -307,10 +307,10 @@ export default function Home() {
                 college consulting plus SAT/ACT tutoring.
               </p>
               <div className="tag-row">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
                 <span>Education</span>
-                <span>Tutoring</span>
-                <span>SAT/ACT</span>
-                <span>College Consulting</span>
               </div>
               <a
                 className="text-link"
@@ -337,7 +337,7 @@ export default function Home() {
               <div className="tag-row">
                 <span>React</span>
                 <span>Branding</span>
-                <span>UX</span>
+                <span>UI/UX</span>
               </div>
               <a
                 className="text-link"
@@ -362,10 +362,10 @@ export default function Home() {
                 storefront template for music and merch.
               </p>
               <div className="tag-row">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>UI</span>
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>UI/UX</span>
               </div>
               <a
                 className="text-link"
