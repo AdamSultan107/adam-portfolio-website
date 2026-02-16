@@ -405,14 +405,29 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <form className="contact-form">
+            <form
+              className="contact-form"
+              action="https://formspree.io/f/xaqdoroa"
+              method="POST"
+            >
               <label>
                 First Name
-                <input type="text" name="firstName" placeholder="First Name" />
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  autoComplete="given-name"
+                  required
+                />
               </label>
               <label>
                 Last Name
-                <input type="text" name="lastName" placeholder="Last Name" />
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name"
+                  autoComplete="family-name"
+                />
               </label>
               <label className="full">
                 Email
@@ -420,6 +435,8 @@ export default function Home() {
                   type="email"
                   name="email"
                   placeholder="your-email@email.com"
+                  autoComplete="email"
+                  required
                 />
               </label>
               <label className="full">
@@ -436,6 +453,7 @@ export default function Home() {
                   name="message"
                   rows={5}
                   placeholder="Tell me about your project or how I can help..."
+                  required
                 />
               </label>
               <button className="btn primary" type="submit">
