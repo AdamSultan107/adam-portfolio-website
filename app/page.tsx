@@ -377,6 +377,38 @@ export default function Home() {
               </a>
             </article>
           </div>
+          <div className="project-subheading">
+            <p className="eyebrow">Coursework</p>
+            <h3>Systems Projects</h3>
+          </div>
+          <div className="project-grid project-grid-compact">
+            <article className="project-card compact">
+              <h3>Concurrent HTTP Proxy Server</h3>
+              <p>
+                Built a concurrent HTTP/1.0 proxy with robust parsing,
+                synchronization, and buffered I/O.
+              </p>
+              <div className="tag-row">
+                <span>C</span>
+                <span>POSIX Sockets</span>
+                <span>Pthreads</span>
+                <span>HTTP/1.0</span>
+                <span>Concurrency</span>
+              </div>
+            </article>
+            <article className="project-card compact">
+              <h3>Dynamic Memory Allocator</h3>
+              <p>
+                64-bit memory allocator with 16-byte alignment,
+                splitting/coalescing, and heap validation tooling.
+              </p>
+              <div className="tag-row">
+                <span>C</span>
+                <span>Memory Management</span>
+                <span>Systems</span>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section className="section" id="contact">

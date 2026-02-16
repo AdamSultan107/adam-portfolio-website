@@ -332,6 +332,24 @@ section {
   font-size: 1.2rem;
 }
 
+.project-subheading {
+  margin: 3rem 0 1.25rem;
+}
+
+.project-subheading h3 {
+  font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+}
+
+.project-grid-compact {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card.compact {
+  background: var(--card);
+}
+
 .project-media {
   border-radius: 16px;
   overflow: hidden;
