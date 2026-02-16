@@ -8,23 +8,18 @@ export default function Home() {
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="/Adam_Sultan_Resume.pdf" target="_blank" rel="noopener">
-            Resume
-          </a>
         </nav>
       </header>
 
       <main>
         <section className="hero" id="top">
-          <div className="hero-visual animate-in">
-            <p className="hero-note">Based in New York + Pittsburgh</p>
-          </div>
           <div className="hero-content">
             <p className="eyebrow animate-in">Hello, I'm</p>
             <h1 className="hero-title animate-in delay-1">Adam Sultan</h1>
             <p className="hero-subtitle animate-in delay-2">
               Full-Stack Software Engineer
             </p>
+            <p className="hero-note">Based in New York + Pittsburgh</p>
             <p className="hero-summary animate-in delay-3">
               Information Systems + Human-Computer Interaction student at
               Carnegie Mellon University and software engineering intern focused
@@ -389,8 +384,7 @@ export default function Home() {
             <p className="eyebrow">Contact</p>
             <h2>Let’s Build Something Useful</h2>
             <p className="section-lead">
-              Open to new opportunities, collaborations, and civic tech
-              partnerships.
+              Open to new opportunities, collaborations, and partnerships.
             </p>
           </div>
           <div className="contact-grid">
@@ -414,15 +408,19 @@ export default function Home() {
             <form className="contact-form">
               <label>
                 First Name
-                <input type="text" name="firstName" placeholder="Adam" />
+                <input type="text" name="firstName" placeholder="First Name" />
               </label>
               <label>
                 Last Name
-                <input type="text" name="lastName" placeholder="Sultan" />
+                <input type="text" name="lastName" placeholder="Last Name" />
               </label>
               <label className="full">
                 Email
-                <input type="email" name="email" placeholder="adam@email.com" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your-email@email.com"
+                />
               </label>
               <label className="full">
                 Subject
