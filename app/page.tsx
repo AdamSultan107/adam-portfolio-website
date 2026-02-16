@@ -341,6 +341,14 @@ export default function Home() {
               </div>
               <a
                 className="text-link"
+                href="https://enyxtherapeutics.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View website
+              </a>
+              <a
+                className="text-link"
                 href="https://github.com/AdamSultan107/enyx"
                 target="_blank"
                 rel="noopener"
