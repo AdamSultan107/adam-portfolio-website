@@ -112,6 +112,18 @@ export default function Home() {
                 across the stack from interface to infrastructure.
               </p>
             </div>
+            <div className="coursework">
+              <h3>Relevant Coursework</h3>
+              <div className="coursework-list">
+                <span>Data Structures & Algorithms</span>
+                <span>Computer Systems</span>
+                <span>Software Engineering Foundations</span>
+                <span>Software Construction</span>
+                <span>Database Design & Development</span>
+                <span>Application Design & Development</span>
+                <span>AI & Machine Learning</span>
+              </div>
+            </div>
           </div>
         </section>
 
