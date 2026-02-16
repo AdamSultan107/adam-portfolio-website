@@ -41,6 +41,8 @@
 @media screen and (max-width: 600px) {
   #profile {
     min-height: 0;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
   footer nav {
     height: fit-content;
@@ -75,19 +77,19 @@
     justify-content: center;
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
   .section__text__p3 {
     font-size: 0.95rem;
   }
+  .hero-summary {
+    font-size: 0.95rem;
+  }
   .title {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .text-container {
     text-align: justify;
-  }
-  .hero-highlights {
-    justify-content: center;
   }
   .experience-grid {
     grid-template-columns: 1fr;

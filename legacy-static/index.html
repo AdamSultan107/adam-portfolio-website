@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Adam Sultan is a full-stack software engineer and Carnegie Mellon University student focused on nonprofit and civic tech, product-minded engineering, and reliable systems."
+    />
+    <title>Adam Sultan | Full-Stack Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Adam Sultan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="./assets/Adam_Sultan_Resume.pdf" target="_blank" rel="noopener"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Adam Sultan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a
+              href="./assets/Adam_Sultan_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              onclick="toggleMenu()"
+              >Resume</a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Adam Sultan</h1>
+        <p class="section__text__p2">
+          Full-Stack Software Engineer
+        </p>
+        <p class="section__text__p3">
+          Carnegie Mellon University · Information Systems + HCI
+        </p>
+        <p class="hero-summary">
+          Building reliable, mission-driven software that helps communities access
+          technology, services, and support at scale.
+        </p>
+        <div class="btn-container">
+          <a
+            class="btn btn-color-2"
+            href="./assets/Adam_Sultan_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >Download Resume</a
+          >image.pngimage.png
+          <a class="btn btn-color-1" href="#contact">Contact Info</a>
+        </div>
+        <div id="socials-container">
+          <a
+            href="https://www.linkedin.com/in/adamksultan/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://github.com/AdamSultan107"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Nonprofit & Civic Tech Builder</p>
+              <p>Board Director, The Silicon Project</p>
+              <p>Software Engineering Intern, Allegheny County DHS</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Information Systems + HCI</p>
+              <p>Carnegie Mellon University</p>
+              <p>GPA 3.56/4.0 · Expected May 2027</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a junior at Carnegie Mellon University studying Information Systems
+              and Human-Computer Interaction. I build mission-driven platforms with
+              Next.js, TypeScript, Django, and Supabase, focusing on clean UX and
+              dependable systems.
+            </p>
+            <br />
+            <p>
+              I am based in New York and Pittsburgh and love shipping products that
+              help real people. My nonprofit work with
+              <a
+                href="https://www.thesiliconproject.org/"
+                target="_blank"
+                rel="noopener"
+                >The Silicon Project</a
+              >
+              centers on expanding access to technology through repaired hardware
+              and community programs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Where I Have Shipped</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-grid">
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>Allegheny County DHS</h2>
+              <p class="experience-role">
+                Software Engineering Intern · Analytics, Technology, and Planning
+              </p>
+              <p class="experience-meta">Pittsburgh, PA · Feb 2026 - Present</p>
+            </div>
+            <ul class="experience-list">
+              <li>
+                Engineering a full-stack "Report Issue" module with React, CSS,
+                and Django integrated with Jira for structured triage.
+              </li>
+              <li>
+                Integrated PostHog analytics and contributed via GitHub PRs and
+                code review to track reporting trends.
+              </li>
+            </ul>
+          </article>
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>The Silicon Project</h2>
+              <p class="experience-role">Board Director and Lead Developer</p>
+              <p class="experience-meta">New York, NY · Jun 2022 - Present</p>
+            </div>
+            <ul class="experience-list">
+              <li>
+                Co-architected the nonprofit platform with Next.js and
+                Supabase, including an internal portal and Stripe store.
+              </li>
+              <li>
+                Built secure donor and inventory systems enabling $430K+ in
+                donations and 12,000+ lbs of e-waste processing for community
+                impact programs.
+              </li>
+            </ul>
+          </article>
+          <article class="details-container experience-card">
+            <div class="experience-heading">
+              <h2>Inteliminds</h2>
+              <p class="experience-role">Founding Software Engineer</p>
+              <p class="experience-meta">New York, NY · Aug 2023 - Feb 2025</p>
+            </div>
+            <ul class="experience-list">
+              <li>
+                Built a custom CRM in Next.js, TypeScript, and Supabase to
+                automate client scheduling, cutting coordination time by 50%.
+              </li>
+              <li>
+                Led Agile sprints and shipped SEO and analytics features that
+                drove 1,000+ unique visits.
+              </li>
+            </ul>
+          </article>
+        </div>
+        <div class="skills-strip">
+          <h2 class="experience-sub-title">Toolbox</h2>
+          <div class="skills-grid">
+            <div class="skills-group">
+              <h3>Languages</h3>
+              <div class="skills-list">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">Ruby</span>
+              </div>
+            </div>
+            <div class="skills-group">
+              <h3>Frameworks</h3>
+              <div class="skills-list">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Ruby on Rails</span>
+              </div>
+            </div>
+            <div class="skills-group">
+              <h3>Developer Tools</h3>
+              <div class="skills-list">
+                <span class="skill-tag">Git/GitHub</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Linux/Unix</span>
+                <span class="skill-tag">Make</span>
+                <span class="skill-tag">GDB</span>
+                <span class="skill-tag">Valgrind</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Vercel</span>
+                <span class="skill-tag">Supabase</span>
+                <span class="skill-tag">GitHub Actions</span>
+              </div>
+            </div>
+            <div class="skills-group">
+              <h3>Concepts</h3>
+              <div class="skills-list">
+                <span class="skill-tag">Systems Programming</span>
+                <span class="skill-tag">Agile/Scrum</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">MVC Architecture</span>
+                <span class="skill-tag">Database Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers projects-grid">
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">Beats Store Template</h2>
+            <p class="project-description">
+              Responsive storefront template for music and merch with reusable
+              UI sections and clean layout structure.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+              <span>UI</span>
+            </div>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/AdamSultan107/beats-store-template"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">Enyx</h2>
+            <p class="project-description">
+              Product-focused app experience emphasizing accessibility,
+              modular architecture, and polished UI.
+            </p>
+            <div class="project-tags">
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Component Design</span>
+              <span>Accessibility</span>
+              <span>UX</span>
+            </div>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/AdamSultan107/enyx"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">RestroomRanker</h2>
+            <p class="project-description">
+              Civic-minded app that helps university students find and rate clean,
+              accessible restrooms in public spaces.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Maps</span>
+              <span>Product Design</span>
+              <span>Community UX</span>
+              <span>Data</span>
+            </div>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/AdamSultan107/restroomranker"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">
+              Open Source: NodeBB Cache Crew
+            </h2>
+            <p class="project-description">
+              Contributed to a NodeBB fork with performance and caching work
+              for a large forum codebase.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Redis</span>
+              <span>Performance</span>
+              <span>Testing</span>
+              <span>Collaboration</span>
+            </div>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/CMU-313/nodebb-fall-2025-cache-crew"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">
+              The Silicon Project Platform
+            </h2>
+            <p class="project-description">
+              Nonprofit operations platform for donations, inventory, and
+              community programs supporting technology access.
+            </p>
+            <div class="project-tags">
+              <span>Next.js</span>
+              <span>Supabase</span>
+              <span>Stripe</span>
+              <span>Postgres</span>
+              <span>Nonprofit Ops</span>
+            </div>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://www.thesiliconproject.org/"
+                target="_blank"
+                rel="noopener"
+                >Website</a
+              >
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">
+              Concurrent HTTP Proxy Server
+            </h2>
+            <p class="project-description">
+              Built a concurrent HTTP/1.0 proxy with robust parsing,
+              synchronization, and buffered I/O.
+            </p>
+            <div class="project-tags">
+              <span>C</span>
+              <span>POSIX Sockets</span>
+              <span>Pthreads</span>
+              <span>HTTP/1.0</span>
+              <span>Concurrency</span>
+            </div>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="#contact">Details</a>
+            </div>
+          </div>
+          <div class="details-container color-container project-card">
+            <h2 class="experience-sub-title project-title">
+              Dynamic Memory Allocator
+            </h2>
+            <p class="project-description">
+              64-bit memory allocator with 16-byte alignment, splitting/coalescing,
+              and heap validation tooling.
+            </p>
+            <div class="project-tags">
+              <span>C</span>
+              <span>Memory Management</span>
+              <span>Valgrind</span>
+              <span>GDB</span>
+              <span>Systems</span>
+            </div>
+            <div class="btn-container">
+              <a class="btn btn-color-2 project-btn" href="#contact">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section> 
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/adamksultan/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://github.com/AdamSultan107"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2026 Adam Sultan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
