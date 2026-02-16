@@ -17,11 +17,6 @@ export default function Home() {
       <main>
         <section className="hero" id="top">
           <div className="hero-visual animate-in">
-            <div className="hero-portrait">
-              <div className="hero-portrait-inner">
-                <span>Portrait Placeholder</span>
-              </div>
-            </div>
             <p className="hero-note">Based in New York + Pittsburgh</p>
           </div>
           <div className="hero-content">
