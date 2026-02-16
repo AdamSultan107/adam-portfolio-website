@@ -31,8 +31,9 @@ export default function Home() {
               Full-Stack Software Engineer
             </p>
             <p className="hero-summary animate-in delay-3">
-              Building reliable, mission-driven software that helps communities
-              access technology, services, and support at scale.
+              Information Systems + Human-Computer Interaction student at
+              Carnegie Mellon University and software engineering intern focused
+              on reliable, user-centered systems.
             </p>
             <div className="hero-actions animate-in delay-4">
               <a
@@ -74,37 +75,41 @@ export default function Home() {
         <section className="section" id="about">
           <div className="section-heading">
             <p className="eyebrow">About</p>
-            <h2>Builder for nonprofit + civic tech</h2>
+            <h2>Information Systems + Human-Computer Interaction @ CMU</h2>
             <p className="section-lead">
-              I focus on clean UX and dependable systems, shipping platforms that
-              help real people.
+              Student @ Carnegie Mellon University focused on full-stack
+              engineering and shipping reliable, user-centered, and scalable
+              products.
             </p>
           </div>
           <div className="about-grid">
             <div className="about-card">
               <h3>Experience</h3>
-              <p>Nonprofit & Civic Tech Builder</p>
-              <p>Board Director, The Silicon Project</p>
-              <p>Software Engineering Intern, Allegheny County DHS</p>
+              <p>Board Director & Developer - The Silicon Project</p>
+              <p>
+                Software Engineering Intern - Allegheny County DHS (Dept. of
+                Analytics, Technology, and Planning)
+              </p>
             </div>
             <div className="about-card">
               <h3>Education</h3>
               <p>B.S. Information Systems + HCI</p>
               <p>Carnegie Mellon University</p>
-              <p>GPA 3.56/4.0 · Expected May 2027</p>
+              <p>Expected May 2027</p>
             </div>
             <div className="about-text">
               <p>
-                I am a junior at Carnegie Mellon University studying Information
-                Systems and Human-Computer Interaction. I build mission-driven
-                platforms with Next.js, TypeScript, Django, and Supabase,
-                focusing on clean UX and dependable systems.
+                I am a Junior at Carnegie Mellon University studying Information
+                Systems and Human-Computer Interaction, with a concentration in
+                AI Management. I build full-stack platforms with Next.js,
+                TypeScript, Supabase, and more, focusing on clean UX and
+                dependable systems.
               </p>
               <p>
                 I am based in New York and Pittsburgh and love shipping products
-                that help real people. My nonprofit work with The Silicon
-                Project centers on expanding access to technology through
-                repaired hardware and community programs.
+                that make technology simpler and more useful for real people.
+                I’m currently a Software Engineering intern and enjoy working
+                across the stack from interface to infrastructure.
               </p>
             </div>
           </div>
@@ -114,14 +119,19 @@ export default function Home() {
           <div className="section-heading">
             <p className="eyebrow">Toolkit</p>
             <h2>What I Build With</h2>
-            <p className="section-lead">
-              A mix of product engineering, systems, and community-facing work.
-            </p>
           </div>
           <div className="skills-stack">
             <div className="skills-row">
               <div className="skills-label">Programming</div>
               <div className="skill-items">
+                <div className="skill-item">
+                  <i className="devicon-java-plain" aria-hidden="true" />
+                  <span>Java</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-c-plain" aria-hidden="true" />
+                  <span>C</span>
+                </div>
                 <div className="skill-item">
                   <i className="devicon-python-plain" aria-hidden="true" />
                   <span>Python</span>
@@ -135,8 +145,8 @@ export default function Home() {
                   <span>TypeScript</span>
                 </div>
                 <div className="skill-item">
-                  <i className="devicon-c-plain" aria-hidden="true" />
-                  <span>C</span>
+                  <i className="devicon-r-plain" aria-hidden="true" />
+                  <span>R</span>
                 </div>
               </div>
             </div>
@@ -152,12 +162,16 @@ export default function Home() {
                   <span>Next.js</span>
                 </div>
                 <div className="skill-item">
+                  <i className="devicon-tailwindcss-plain" aria-hidden="true" />
+                  <span>Tailwind CSS</span>
+                </div>
+                <div className="skill-item">
                   <i className="devicon-html5-plain" aria-hidden="true" />
-                  <span>HTML5</span>
+                  <span>HTML</span>
                 </div>
                 <div className="skill-item">
                   <i className="devicon-css3-plain" aria-hidden="true" />
-                  <span>CSS3</span>
+                  <span>CSS</span>
                 </div>
               </div>
             </div>
@@ -165,20 +179,12 @@ export default function Home() {
               <div className="skills-label">Backend</div>
               <div className="skill-items">
                 <div className="skill-item">
-                  <i className="devicon-rails-plain" aria-hidden="true" />
-                  <span>Ruby on Rails</span>
-                </div>
-                <div className="skill-item">
                   <i className="devicon-nodejs-plain" aria-hidden="true" />
                   <span>Node.js</span>
                 </div>
                 <div className="skill-item">
-                  <i className="devicon-django-plain" aria-hidden="true" />
-                  <span>Django</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-ruby-plain" aria-hidden="true" />
-                  <span>Ruby</span>
+                  <i className="devicon-rails-plain" aria-hidden="true" />
+                  <span>Ruby on Rails</span>
                 </div>
               </div>
             </div>
@@ -186,20 +192,12 @@ export default function Home() {
               <div className="skills-label">Database</div>
               <div className="skill-items">
                 <div className="skill-item">
-                  <i className="devicon-mongodb-plain" aria-hidden="true" />
-                  <span>MongoDB</span>
-                </div>
-                <div className="skill-item">
                   <i className="devicon-postgresql-plain" aria-hidden="true" />
                   <span>PostgreSQL</span>
                 </div>
                 <div className="skill-item">
-                  <i className="devicon-firebase-plain" aria-hidden="true" />
-                  <span>Firebase</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-redis-plain" aria-hidden="true" />
-                  <span>Redis</span>
+                  <i className="devicon-supabase-plain" aria-hidden="true" />
+                  <span>Supabase</span>
                 </div>
               </div>
             </div>
@@ -211,19 +209,44 @@ export default function Home() {
                   <span>Git</span>
                 </div>
                 <div className="skill-item">
-                  <i className="devicon-docker-plain" aria-hidden="true" />
-                  <span>Docker</span>
-                </div>
-                <div className="skill-item">
                   <i className="devicon-github-original" aria-hidden="true" />
                   <span>GitHub</span>
                 </div>
                 <div className="skill-item">
-                  <i
-                    className="devicon-amazonwebservices-plain"
-                    aria-hidden="true"
-                  />
-                  <span>AWS</span>
+                  <i className="devicon-docker-plain" aria-hidden="true" />
+                  <span>Docker</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-linux-plain" aria-hidden="true" />
+                  <span>Linux/Unix</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-figma-plain" aria-hidden="true" />
+                  <span>Figma</span>
+                </div>
+                <div className="skill-item">
+                  <i className="devicon-vercel-original" aria-hidden="true" />
+                  <span>Vercel</span>
+                </div>
+              </div>
+            </div>
+            <div className="skills-row">
+              <div className="skills-label">Concepts</div>
+              <div className="skill-items">
+                <div className="skill-item">
+                  <span>Systems Programming</span>
+                </div>
+                <div className="skill-item plain">
+                  <span>Agile/Scrum</span>
+                </div>
+                <div className="skill-item plain">
+                  <span>CI/CD</span>
+                </div>
+                <div className="skill-item plain">
+                  <span>MVC Architecture</span>
+                </div>
+                <div className="skill-item plain">
+                  <span>Database Design</span>
                 </div>
               </div>
             </div>
@@ -234,14 +257,16 @@ export default function Home() {
           <div className="section-heading">
             <p className="eyebrow">Projects</p>
             <h2>Selected Work</h2>
-            <p className="section-lead">A snapshot of what I've shipped lately.</p>
+            <p className="section-lead">
+              A snapshot of what I've shipped lately.
+            </p>
           </div>
           <div className="project-grid">
             <article className="project-card">
               <h3>Beats Store Template</h3>
               <p>
-                Responsive storefront template for music and merch with reusable
-                UI sections and clean layout structure.
+                Built for a friend and then generalized into a reusable
+                storefront template for music and merch.
               </p>
               <div className="tag-row">
                 <span>HTML</span>
@@ -259,10 +284,10 @@ export default function Home() {
               </a>
             </article>
             <article className="project-card">
-              <h3>Enyx</h3>
+              <h3>ENYX</h3>
               <p>
-                Product-focused app experience emphasizing accessibility,
-                modular architecture, and polished UI.
+                Website for a gene therapy startup in NYC, focused on a clean
+                product story and trustworthy brand presence.
               </p>
               <div className="tag-row">
                 <span>TypeScript</span>
@@ -281,8 +306,8 @@ export default function Home() {
             <article className="project-card">
               <h3>RestroomRanker</h3>
               <p>
-                Civic-minded app that helps university students find and rate
-                clean, accessible restrooms in public spaces.
+                HackCMU team project helping students find and rate clean,
+                accessible restrooms in public spaces.
               </p>
               <div className="tag-row">
                 <span>React</span>
@@ -299,10 +324,33 @@ export default function Home() {
               </a>
             </article>
             <article className="project-card">
+              <h3>Intelliminds</h3>
+              <p>
+                Tutoring company I started with friends to bring affordable
+                tutoring options to students in NYC and beyond, including
+                college consulting plus SAT/ACT tutoring.
+              </p>
+              <div className="tag-row">
+                <span>Education</span>
+                <span>Tutoring</span>
+                <span>SAT/ACT</span>
+                <span>College Consulting</span>
+              </div>
+              <a
+                className="text-link"
+                href="https://intelliminds-sooty.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View website
+              </a>
+            </article>
+            <article className="project-card">
               <h3>The Silicon Project Platform</h3>
               <p>
-                Nonprofit operations platform for donations, inventory, and
-                community programs supporting technology access.
+                Nonprofit operations platform I’ve co-developed with a team for
+                the past four years, supporting donations, inventory, and
+                community programs.
               </p>
               <div className="tag-row">
                 <span>Next.js</span>
@@ -363,7 +411,11 @@ export default function Home() {
               </label>
               <label className="full">
                 Subject
-                <input type="text" name="subject" placeholder="Let’s collaborate" />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Let’s collaborate"
+                />
               </label>
               <label className="full">
                 Message
