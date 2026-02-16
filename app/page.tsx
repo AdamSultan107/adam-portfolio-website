@@ -263,68 +263,42 @@ export default function Home() {
           </div>
           <div className="project-grid">
             <article className="project-card">
-              <h3>Beats Store Template</h3>
+              <h3>The Silicon Project Platform</h3>
+              <div className="project-media">
+                <img
+                  src="/projects/tsp.png"
+                  alt="The Silicon Project homepage"
+                  loading="lazy"
+                />
+              </div>
               <p>
-                Built for a friend and then generalized into a reusable
-                storefront template for music and merch.
+                Nonprofit operations platform I’ve co-developed with a team for
+                the past four years, supporting donations, inventory, and
+                community programs.
               </p>
               <div className="tag-row">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>UI</span>
+                <span>Next.js</span>
+                <span>Supabase</span>
+                <span>Stripe</span>
               </div>
               <a
                 className="text-link"
-                href="https://github.com/AdamSultan107/beats-store-template"
+                href="https://www.thesiliconproject.org/"
                 target="_blank"
                 rel="noopener"
               >
-                View repo
-              </a>
-            </article>
-            <article className="project-card">
-              <h3>ENYX</h3>
-              <p>
-                Website for a gene therapy startup in NYC, focused on a clean
-                product story and trustworthy brand presence.
-              </p>
-              <div className="tag-row">
-                <span>TypeScript</span>
-                <span>React</span>
-                <span>Accessibility</span>
-              </div>
-              <a
-                className="text-link"
-                href="https://github.com/AdamSultan107/enyx"
-                target="_blank"
-                rel="noopener"
-              >
-                View repo
-              </a>
-            </article>
-            <article className="project-card">
-              <h3>RestroomRanker</h3>
-              <p>
-                HackCMU team project helping students find and rate clean,
-                accessible restrooms in public spaces.
-              </p>
-              <div className="tag-row">
-                <span>React</span>
-                <span>Maps</span>
-                <span>Community UX</span>
-              </div>
-              <a
-                className="text-link"
-                href="https://github.com/AdamSultan107/restroomranker"
-                target="_blank"
-                rel="noopener"
-              >
-                View repo
+                View website
               </a>
             </article>
             <article className="project-card">
               <h3>Intelliminds</h3>
+              <div className="project-media">
+                <img
+                  src="/projects/intelliminds.png"
+                  alt="Intelliminds homepage"
+                  loading="lazy"
+                />
+              </div>
               <p>
                 Tutoring company I started with friends to bring affordable
                 tutoring options to students in NYC and beyond, including
@@ -346,24 +320,58 @@ export default function Home() {
               </a>
             </article>
             <article className="project-card">
-              <h3>The Silicon Project Platform</h3>
+              <h3>ENYX</h3>
+              <div className="project-media">
+                <img
+                  src="/projects/enyx.png"
+                  alt="ENYX homepage"
+                  loading="lazy"
+                />
+              </div>
               <p>
-                Nonprofit operations platform I’ve co-developed with a team for
-                the past four years, supporting donations, inventory, and
-                community programs.
+                Website for a gene therapy startup in NYC, focused on a clean
+                product story and trustworthy brand presence.
               </p>
               <div className="tag-row">
-                <span>Next.js</span>
-                <span>Supabase</span>
-                <span>Stripe</span>
+                <span>React</span>
+                <span>Branding</span>
+                <span>UX</span>
               </div>
               <a
                 className="text-link"
-                href="https://www.thesiliconproject.org/"
+                href="https://github.com/AdamSultan107/enyx"
                 target="_blank"
                 rel="noopener"
               >
-                View website
+                View repo
+              </a>
+            </article>
+            <article className="project-card">
+              <h3>Beats Store Template</h3>
+              <div className="project-media">
+                <img
+                  src="/projects/beats.png"
+                  alt="Beats Store template homepage"
+                  loading="lazy"
+                />
+              </div>
+              <p>
+                Built for a friend and then generalized into a reusable
+                storefront template for music and merch.
+              </p>
+              <div className="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>UI</span>
+              </div>
+              <a
+                className="text-link"
+                href="https://github.com/AdamSultan107/beats-store-template"
+                target="_blank"
+                rel="noopener"
+              >
+                View repo
               </a>
             </article>
           </div>
@@ -434,7 +442,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <p>Let’s connect and build something amazing.</p>
+        <p>Let’s connect and build something.</p>
         <a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a>
       </footer>
     </div>
