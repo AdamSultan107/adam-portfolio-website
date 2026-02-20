@@ -28,7 +28,7 @@ export default function Home() {
             <div className="hero-actions animate-in delay-4">
               <a
                 className="btn primary"
-                href="/Adam_Sultan_Resume.pdf"
+                href="/Adam_s_Resume_2_12_ (1).pdf"
                 target="_blank"
                 rel="noopener"
               >
