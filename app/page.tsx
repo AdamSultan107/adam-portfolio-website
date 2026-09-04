@@ -1,12 +1,101 @@
+const experiences = [
+  {
+    company: "PNC Financial Services",
+    role: "Software Engineering Intern · GenAI Engineering Team",
+    period: "Jun 2026 — Aug 2026",
+    location: "Pittsburgh, PA",
+    featured: true,
+    summary:
+      "Built production GenAI and full-stack systems for enterprise knowledge workflows.",
+    bullets: [
+      "Designed an RFP response autobuilder using React, Django, and Microsoft Azure—automating question extraction, source-backed retrieval through PNC’s Knowledge Search RAG API, response generation, and publishing for roughly 80% of a 20-hour manual workflow.",
+      "Built a backend orchestration layer for runtime routing, screening LLM-generated responses against risk and compliance criteria, proposing remediations, and routing flagged outputs to human review.",
+      "Shipped persona-based chat personalization for Knowledge Search, a RAG platform serving about 20,000 users, with Django REST APIs for group management, bulk user assignments, and role-specific configurations.",
+      "Improved reliability and observability by patching application vulnerabilities and instrumenting tenant-level usage and response-latency metrics in the React/Django Insights dashboard.",
+    ],
+    tags: ["React", "Django / DRF", "Microsoft Azure", "RAG", "LLM APIs"],
+  },
+  {
+    company: "Allegheny County DHS",
+    role: "Software Engineering Intern · Analytics, Technology & Planning",
+    period: "Feb 2026 — Apr 2026",
+    location: "Pittsburgh, PA",
+    featured: false,
+    summary:
+      "Delivered full-stack features and internal developer tooling in a production public-service platform.",
+    bullets: [
+      "Built a permission-aware Starred Clients feature in Python and Django, spanning the data model, migration, and REST API endpoints.",
+      "Engineered a TypeScript and Django bug-reporting and troubleshooting pipeline that turns user issues into Jira tickets with embedded session replay links.",
+      "Wrote automated unit and integration tests covering core API flows and edge cases within the existing auditing, role, and provider test infrastructure.",
+    ],
+    tags: ["Python", "Django", "TypeScript", "REST APIs", "Jira"],
+  },
+  {
+    company: "The Silicon Project",
+    role: "Lead Developer & Board Director",
+    period: "Jun 2022 — Present",
+    location: "New York, NY",
+    featured: false,
+    summary:
+      "Lead engineering for a nonprofit platform supporting device donation, e-commerce, and internal operations.",
+    bullets: [
+      "Lead a 10-person engineering team through planning, prototyping, code review, testing, and deployment of a JavaScript, React, and Node.js platform with PostgreSQL, Stripe-powered checkout, donor intake, and an employee portal serving 2,600+ users.",
+      "Designed RESTful services for donor tracking and inventory management, supporting $420K+ in donations and diverting 34,000+ pounds of e-waste.",
+    ],
+    tags: ["JavaScript", "React", "Node.js", "PostgreSQL", "Stripe"],
+    link: "https://www.thesiliconproject.org/",
+  },
+];
+
+const skillGroups = [
+  {
+    label: "Languages",
+    skills: ["Java", "Python", "C", "JavaScript", "TypeScript", "SQL", "Ruby", "HTML / CSS"],
+  },
+  {
+    label: "AI / ML",
+    skills: ["Azure OpenAI", "Azure AI Search", "RAG", "LLM APIs", "Multi-Agent Systems"],
+  },
+  {
+    label: "Frameworks",
+    skills: ["React", "Django", "Node.js", "Ruby on Rails", "Next.js", "Tailwind CSS", "REST APIs"],
+  },
+  {
+    label: "Data & Cloud",
+    skills: ["PostgreSQL", "MongoDB", "SQLite", "Redis", "Microsoft Azure"],
+  },
+  {
+    label: "Practices",
+    skills: ["Agile", "Scrum", "Code Review", "Unit & Integration Testing", "CI/CD", "Technical Documentation"],
+  },
+  {
+    label: "Developer Tools",
+    skills: ["Git", "GitHub", "Jenkins", "GitHub Actions", "Docker", "Postman", "Jira", "Cucumber", "Minitest"],
+  },
+];
+
+const coursework = [
+  "Data Structures & Algorithms",
+  "Computer Systems",
+  "AI & Machine Learning",
+  "Software Engineering Foundations",
+  "Database Design & Development",
+  "Application Design & Development",
+  "Human-Computer Interaction",
+];
+
 export default function Home() {
   return (
     <div className="page">
       <header className="site-header">
-        <div className="logo">Adam Sultan</div>
-        <nav className="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
+        <a className="logo" href="#top" aria-label="Adam Sultan, back to top">
+          Adam Sultan
+        </a>
+        <nav className="nav-links" aria-label="Primary navigation">
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -14,499 +103,351 @@ export default function Home() {
       <main>
         <section className="hero" id="top">
           <div className="hero-content">
-            <p className="eyebrow animate-in">Hello, I'm</p>
-            <h1 className="hero-title animate-in delay-1">Adam Sultan</h1>
-            <p className="hero-subtitle animate-in delay-2">
-              Full-Stack Software Engineer
+            <p className="eyebrow animate-in">Carnegie Mellon · Class of 2027</p>
+            <h1 className="hero-title animate-in delay-1">
+              Full-stack engineering for complex, high-stakes workflows.
+            </h1>
+            <p className="hero-summary animate-in delay-2">
+              I’m Adam Sultan, a senior at Carnegie Mellon and former PNC GenAI
+              engineering intern. I build production systems across AI,
+              backend, and product—from enterprise RAG to public-service tools.
             </p>
-            <p className="hero-note">Based in New York + Pittsburgh</p>
-            <p className="hero-summary animate-in delay-3">
-              Information Systems + Human-Computer Interaction student at
-              Carnegie Mellon University and software engineering intern focused
-              on reliable, user-centered systems.
+            <p className="hero-note animate-in delay-3">
+              New York + Pittsburgh · Open to full-time software engineering
+              roles in major U.S. cities starting May 2027
             </p>
             <div className="hero-actions animate-in delay-4">
               <a
                 className="btn primary"
                 href="/AdamSultanResume.pdf"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                Download Resume
+                View Resume
               </a>
-              <a className="btn secondary" href="#contact">
-                Contact
+              <a className="btn secondary" href="#experience">
+                Explore My Work
               </a>
             </div>
             <div className="socials animate-in delay-5">
               <a
                 className="social-pill"
-                href="https://www.linkedin.com/in/adamksultan/"
+                href="https://www.linkedin.com/in/aksultan05"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                LinkedIn
+                LinkedIn ↗
               </a>
               <a
                 className="social-pill"
-                href="https://github.com/AdamSultan107"
+                href="https://github.com/aksultan05"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                GitHub
+                GitHub ↗
               </a>
               <a className="social-pill" href="mailto:aksultan05@gmail.com">
-                Email
+                Email ↗
               </a>
             </div>
           </div>
+          <div className="proof-grid animate-in delay-5" aria-label="Selected impact">
+            <div>
+              <strong>~20 hrs → ~4 hrs</strong>
+              <span>RFP workflow target</span>
+            </div>
+            <div>
+              <strong>~20,000</strong>
+              <span>enterprise RAG users</span>
+            </div>
+            <div>
+              <strong>16</strong>
+              <span>merged NodeBB PRs</span>
+            </div>
+            <div>
+              <strong>$420K+</strong>
+              <span>donations supported</span>
+            </div>
+          </div>
         </section>
 
-        <section className="section" id="about">
+        <section className="section" id="experience">
           <div className="section-heading">
-            <p className="eyebrow">About</p>
-            <h2>Information Systems + Human-Computer Interaction @ CMU</h2>
+            <p className="eyebrow">Experience</p>
+            <h2>Production software with measurable impact.</h2>
             <p className="section-lead">
-              Student @ Carnegie Mellon University focused on full-stack
-              engineering and shipping reliable, user-centered, and scalable
-              products.
+              Enterprise GenAI, government technology, and nonprofit systems—built
+              with the people who depend on them in mind.
             </p>
           </div>
-          <div className="about-grid">
-            <div className="about-card">
-              <h3>Experience</h3>
-              <p>Board Director & Developer - The Silicon Project</p>
-              <p>
-                Software Engineering Intern - Allegheny County DHS (Dept. of
-                Analytics, Technology, and Planning)
-              </p>
-            </div>
-            <div className="about-card">
-              <h3>Education</h3>
-              <p>B.S. Information Systems + HCI</p>
-              <p>Carnegie Mellon University</p>
-              <p>Expected May 2027</p>
-            </div>
-            <div className="about-text">
-              <p>
-                I am a Junior at Carnegie Mellon University studying Information
-                Systems and Human-Computer Interaction, with a concentration in
-                AI Management. I build full-stack platforms with Next.js,
-                TypeScript, Supabase, and more, focusing on clean UX and
-                dependable systems.
-              </p>
-              <p>
-                I am based in New York and Pittsburgh and love shipping products
-                that make technology simpler and more useful for real people.
-                I’m currently a Software Engineering intern and enjoy working
-                across the stack from interface to infrastructure.
-              </p>
-            </div>
-            <div className="coursework">
-              <h3>Relevant Coursework</h3>
-              <div className="coursework-list">
-                <span>Data Structures & Algorithms</span>
-                <span>Computer Systems</span>
-                <span>Software Engineering Foundations</span>
-                <span>Software Construction</span>
-                <span>Database Design & Development</span>
-                <span>Application Design & Development</span>
-                <span>AI & Machine Learning</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="section skills-section" id="skills">
-          <div className="section-heading">
-            <p className="eyebrow">Toolkit</p>
-            <h2>What I Build With</h2>
-          </div>
-          <div className="skills-stack">
-            <div className="skills-row">
-              <div className="skills-label">Programming</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <i className="devicon-java-plain" aria-hidden="true" />
-                  <span>Java</span>
+          <div className="experience-list">
+            {experiences.map((experience) => (
+              <article
+                className={`experience-card${experience.featured ? " featured" : ""}`}
+                key={experience.company}
+              >
+                <div className="experience-meta">
+                  <div>
+                    {experience.featured && <span className="lead-badge">Featured experience</span>}
+                    <h3>{experience.company}</h3>
+                    <p className="experience-role">{experience.role}</p>
+                  </div>
+                  <div className="experience-date">
+                    <span>{experience.period}</span>
+                    <span>{experience.location}</span>
+                  </div>
                 </div>
-                <div className="skill-item">
-                  <i className="devicon-c-plain" aria-hidden="true" />
-                  <span>C</span>
+                <p className="experience-summary">{experience.summary}</p>
+                <ul className="experience-bullets">
+                  {experience.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+                <div className="experience-footer">
+                  <div className="tag-row">
+                    {experience.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                  {experience.link && (
+                    <a
+                      className="text-link"
+                      href={experience.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Visit organization ↗
+                    </a>
+                  )}
                 </div>
-                <div className="skill-item">
-                  <i className="devicon-python-plain" aria-hidden="true" />
-                  <span>Python</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-javascript-plain" aria-hidden="true" />
-                  <span>JavaScript</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-typescript-plain" aria-hidden="true" />
-                  <span>TypeScript</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-r-plain" aria-hidden="true" />
-                  <span>R</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-row">
-              <div className="skills-label">Frontend</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <i className="devicon-react-original" aria-hidden="true" />
-                  <span>React</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-nextjs-original" aria-hidden="true" />
-                  <span>Next.js</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-tailwindcss-plain" aria-hidden="true" />
-                  <span>Tailwind CSS</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-html5-plain" aria-hidden="true" />
-                  <span>HTML</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-css3-plain" aria-hidden="true" />
-                  <span>CSS</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-row">
-              <div className="skills-label">Backend</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <i className="devicon-nodejs-plain" aria-hidden="true" />
-                  <span>Node.js</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-rails-plain" aria-hidden="true" />
-                  <span>Ruby on Rails</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-row">
-              <div className="skills-label">Database</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <i className="devicon-postgresql-plain" aria-hidden="true" />
-                  <span>PostgreSQL</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-supabase-plain" aria-hidden="true" />
-                  <span>Supabase</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-row">
-              <div className="skills-label">Tools</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <i className="devicon-git-plain" aria-hidden="true" />
-                  <span>Git</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-github-original" aria-hidden="true" />
-                  <span>GitHub</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-docker-plain" aria-hidden="true" />
-                  <span>Docker</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-linux-plain" aria-hidden="true" />
-                  <span>Linux/Unix</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-figma-plain" aria-hidden="true" />
-                  <span>Figma</span>
-                </div>
-                <div className="skill-item">
-                  <i className="devicon-vercel-original" aria-hidden="true" />
-                  <span>Vercel</span>
-                </div>
-              </div>
-            </div>
-            <div className="skills-row">
-              <div className="skills-label">Concepts</div>
-              <div className="skill-items">
-                <div className="skill-item">
-                  <span>Systems Programming</span>
-                </div>
-                <div className="skill-item plain">
-                  <span>Agile/Scrum</span>
-                </div>
-                <div className="skill-item plain">
-                  <span>CI/CD</span>
-                </div>
-                <div className="skill-item plain">
-                  <span>MVC Architecture</span>
-                </div>
-                <div className="skill-item plain">
-                  <span>Database Design</span>
-                </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
         </section>
 
         <section className="section" id="projects">
           <div className="section-heading">
-            <p className="eyebrow">Projects</p>
-            <h2>Selected Work</h2>
+            <p className="eyebrow">Selected Projects</p>
+            <h2>Engineering beyond the internship.</h2>
             <p className="section-lead">
-              A snapshot of what I've shipped lately.
+              Open-source delivery, tested full-stack product work, and systems
+              programming fundamentals.
             </p>
           </div>
-          <div className="project-grid">
-            <article className="project-card">
-              <h3>The Silicon Project Platform</h3>
-              <div className="project-media">
-                <img
-                  src="/projects/tsp.png"
-                  alt="The Silicon Project homepage"
-                  loading="lazy"
-                />
+          <div className="project-grid project-grid-featured">
+            <article className="project-card project-card-dark">
+              <div className="project-topline">
+                <span className="project-number">01</span>
+                <span className="project-type">Open Source</span>
               </div>
+              <h3>NodeBB Contributor</h3>
+              <p className="project-impact">16 merged pull requests</p>
               <p>
-                Nonprofit operations platform I’ve co-developed with a team for
-                the past four years, supporting donations, inventory, and
-                community programs.
+                Delivered a “Post Anonymously” plugin in a team fork using an
+                Agile, peer-reviewed workflow. Implemented hooks, admin settings,
+                and permission checks, then strengthened compatibility with CI/CD
+                automation and mutation testing.
               </p>
               <div className="tag-row">
-                <span>Next.js</span>
-                <span>PostgreSQL + Supabase</span>
-                <span>Stripe API</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Redis</span>
+                <span>GitHub Actions</span>
+                <span>Docker</span>
               </div>
               <a
                 className="text-link"
-                href="https://www.thesiliconproject.org/"
+                href="https://github.com/NodeBB/NodeBB"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                View website
+                Explore NodeBB ↗
               </a>
             </article>
+
             <article className="project-card">
-              <h3>Intelliminds</h3>
-              <div className="project-media">
-                <img
-                  src="/projects/intelliminds.png"
-                  alt="Intelliminds homepage"
-                  loading="lazy"
-                />
+              <div className="project-topline">
+                <span className="project-number">02</span>
+                <span className="project-type">Full Stack</span>
               </div>
+              <h3>Roi Du Pain Bakery</h3>
+              <p className="project-impact">Five-role commerce platform</p>
               <p>
-                Tutoring company I started with friends to bring affordable
-                tutoring options to students in NYC and beyond, including
-                college consulting plus SAT/ACT tutoring.
+                Built session-based authentication and role-based access across
+                customers, managers, bakers, shippers, and guests. Delivered a
+                catalog, persistent cart, shipping-aware checkout, fulfillment
+                workflows, and versioned RESTful JSON APIs.
               </p>
               <div className="tag-row">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
-                <span>Education</span>
+                <span>Ruby on Rails</span>
+                <span>SQLite</span>
+                <span>Cucumber</span>
+                <span>Minitest</span>
               </div>
-              <a
-                className="text-link"
-                href="https://intelliminds-sooty.vercel.app/"
-                target="_blank"
-                rel="noopener"
-              >
-                View website
-              </a>
-            </article>
-            <article className="project-card">
-              <h3>ENYX</h3>
-              <div className="project-media">
-                <img
-                  src="/projects/enyx.png"
-                  alt="ENYX homepage"
-                  loading="lazy"
-                />
-              </div>
-              <p>
-                Website for a gene therapy startup in NYC, focused on a clean
-                product story and trustworthy brand presence.
-              </p>
-              <div className="tag-row">
-                <span>React</span>
-                <span>Branding</span>
-                <span>UI/UX</span>
-              </div>
-              <a
-                className="text-link"
-                href="https://enyxtherapeutics.vercel.app/"
-                target="_blank"
-                rel="noopener"
-              >
-                View website
-              </a>
-              <a
-                className="text-link"
-                href="https://github.com/AdamSultan107/enyx"
-                target="_blank"
-                rel="noopener"
-              >
-                View repo
-              </a>
-            </article>
-            <article className="project-card">
-              <h3>Beats Store Template</h3>
-              <div className="project-media">
-                <img
-                  src="/projects/beats.png"
-                  alt="Beats Store template homepage"
-                  loading="lazy"
-                />
-              </div>
-              <p>
-                Built for a friend and then generalized into a reusable
-                storefront template for music and merch.
-              </p>
-              <div className="tag-row">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
-                <span>UI/UX</span>
-              </div>
-              <a
-                className="text-link"
-                href="https://github.com/AdamSultan107/beats-store-template"
-                target="_blank"
-                rel="noopener"
-              >
-                View repo
-              </a>
+              <p className="project-note">100% verified Cucumber and Minitest coverage</p>
             </article>
           </div>
+
           <div className="project-subheading">
-            <p className="eyebrow">Coursework</p>
-            <h3>Systems Projects</h3>
+            <p className="eyebrow">Systems Coursework</p>
+            <h3>Under the hood</h3>
+            <p>
+              Source remains private in accordance with Carnegie Mellon course policies.
+            </p>
           </div>
           <div className="project-grid project-grid-compact">
             <article className="project-card compact">
+              <div className="project-topline">
+                <span className="project-number">03</span>
+                <span className="project-type">C · Networking</span>
+              </div>
               <h3>Concurrent HTTP Proxy Server</h3>
               <p>
-                Built a concurrent HTTP/1.0 proxy with robust parsing,
-                synchronization, and buffered I/O.
+                Built a concurrent HTTP/1.0 proxy with robust request parsing,
+                thread synchronization, POSIX sockets, and buffered I/O.
               </p>
               <div className="tag-row">
                 <span>C</span>
                 <span>POSIX Sockets</span>
                 <span>Pthreads</span>
                 <span>HTTP/1.0</span>
-                <span>Concurrency</span>
               </div>
             </article>
             <article className="project-card compact">
+              <div className="project-topline">
+                <span className="project-number">04</span>
+                <span className="project-type">C · Memory</span>
+              </div>
               <h3>Dynamic Memory Allocator</h3>
               <p>
-                64-bit memory allocator with 16-byte alignment,
-                splitting/coalescing, and heap validation tooling.
+                Implemented a 64-bit allocator with 16-byte alignment, block
+                splitting and coalescing, and heap-consistency validation.
               </p>
               <div className="tag-row">
                 <span>C</span>
+                <span>64-bit</span>
                 <span>Memory Management</span>
-                <span>Systems</span>
+                <span>Heap Validation</span>
               </div>
             </article>
           </div>
         </section>
 
-        <section className="section" id="contact">
+        <section className="section skills-section" id="skills">
           <div className="section-heading">
-            <p className="eyebrow">Contact</p>
-            <h2>Let’s Build Something Useful</h2>
-            <p className="section-lead">
-              Open to new opportunities, collaborations, and partnerships.
-            </p>
+            <p className="eyebrow">Toolkit</p>
+            <h2>From model orchestration to the interface.</h2>
           </div>
-          <div className="contact-grid">
-            <div className="contact-card">
-              <h3>Let’s Connect</h3>
-              <p>
-                I’m always open to discussing new opportunities, interesting
-                projects, or just saying hello.
-              </p>
-              <div className="contact-details">
-                <div>
-                  <span>Email</span>
-                  <strong>aksultan05@gmail.com</strong>
-                </div>
-                <div>
-                  <span>Response Time</span>
-                  <strong>Within 24 hours</strong>
+          <div className="skills-stack">
+            {skillGroups.map((group) => (
+              <div className="skills-row" key={group.label}>
+                <div className="skills-label">{group.label}</div>
+                <div className="skill-items">
+                  {group.skills.map((skill) => (
+                    <span className="skill-item" key={skill}>{skill}</span>
+                  ))}
                 </div>
               </div>
-            </div>
-            <form
-              className="contact-form"
-              action="https://formspree.io/f/xaqdoroa"
-              method="POST"
-            >
-              <label>
-                First Name
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  autoComplete="given-name"
-                  required
-                />
-              </label>
-              <label>
-                Last Name
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  autoComplete="family-name"
-                />
-              </label>
-              <label className="full">
-                Email
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="your-email@email.com"
-                  autoComplete="email"
-                  required
-                />
-              </label>
-              <label className="full">
-                Subject
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Let’s collaborate"
-                />
-              </label>
-              <label className="full">
-                Message
-                <textarea
-                  name="message"
-                  rows={5}
-                  placeholder="Tell me about your project or how I can help..."
-                  required
-                />
-              </label>
-              <button className="btn primary" type="submit">
-                Send Message
-              </button>
-            </form>
+            ))}
           </div>
+        </section>
+
+        <section className="section" id="about">
+          <div className="section-heading">
+            <p className="eyebrow">About</p>
+            <h2>Engineer, product thinker, and CMU senior.</h2>
+          </div>
+          <div className="about-grid">
+            <div className="about-text">
+              <p className="about-intro">
+                I study Information Systems and Human-Computer Interaction at
+                Carnegie Mellon.
+              </p>
+              <p>
+                My work sits where backend systems, applied AI, and thoughtful
+                product design meet. I like turning ambiguous workflows into
+                software that is observable, tested, and genuinely useful—from
+                enterprise knowledge search to public-sector case management.
+              </p>
+              <p>
+                I graduate in May 2027 and am open to full-time software
+                engineering roles in major U.S. cities.
+              </p>
+            </div>
+            <aside className="education-card">
+              <span className="card-label">Education</span>
+              <h3>Carnegie Mellon University</h3>
+              <p>B.S. Information Systems & Human-Computer Interaction</p>
+              <p>GPA 3.5 / 4.0</p>
+              <p className="education-date">Expected May 2027</p>
+            </aside>
+            <div className="coursework">
+              <h3>Relevant Coursework</h3>
+              <div className="coursework-list">
+                {coursework.map((course) => <span key={course}>{course}</span>)}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section contact-section" id="contact">
+          <div className="contact-intro">
+            <p className="eyebrow">Contact</p>
+            <h2>Let’s build something useful.</h2>
+            <p>
+              I’m looking for full-time software engineering roles beginning in
+              May 2027 and am always glad to talk about ambitious engineering work.
+            </p>
+            <a className="email-link" href="mailto:aksultan05@gmail.com">
+              aksultan05@gmail.com ↗
+            </a>
+          </div>
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/xaqdoroa"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New portfolio message" />
+            <label className="honeypot" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+            </label>
+            <label>
+              First Name
+              <input type="text" name="firstName" autoComplete="given-name" required />
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="lastName" autoComplete="family-name" />
+            </label>
+            <label className="full">
+              Email
+              <input type="email" name="email" autoComplete="email" required />
+            </label>
+            <label className="full">
+              Subject
+              <input type="text" name="subject" placeholder="Full-time opportunity" />
+            </label>
+            <label className="full">
+              Message
+              <textarea name="message" rows={5} required />
+            </label>
+            <button className="btn primary" type="submit">Send Message</button>
+            <p className="form-fallback">
+              If the form does not open, email me directly at{" "}
+              <a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a>.
+            </p>
+          </form>
         </section>
       </main>
 
       <footer className="site-footer">
-        <p>Let’s connect and build something.</p>
-        <a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a>
+        <p>© {new Date().getFullYear()} Adam Sultan</p>
+        <div>
+          <a href="https://github.com/aksultan05" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/aksultan05" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:aksultan05@gmail.com">Email</a>
+        </div>
       </footer>
     </div>
   );

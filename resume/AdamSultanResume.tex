@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Author : Adam Sultan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% BASE VERSION -- tailor from a copy, don't edit this file
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure generated PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1\vspace{-2pt}}%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Adam Sultan} \\ \vspace{1pt}
+    \small (347) 401-4105 $|$
+    \href{mailto:aksultan05@gmail.com}{\underline{aksultan05@gmail.com}} $|$
+    \href{https://github.com/aksultan05}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/aksultan05}{\underline{LinkedIn}} $|$
+    \href{https://adam-portfolio-website-zeta.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {B.S. in Information Systems \& Human-Computer Interaction; GPA: 3.5/4.0}{Expected May 2027}
+    \vspace{2pt}
+    \item\small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Computer Systems, Software Engineering Foundations, Database Design \& Development, Application Design \& Development, AI \& Machine Learning, Human-Computer Interaction}
+    \vspace{-4pt}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PNC Financial Services}{Pittsburgh, PA}
+      {Software Engineering Intern -- GenAI Engineering Team}{Jun 2026 -- Aug 2026}
+      \resumeItemListStart
+
+        \resumeItem{Designed and built a \textbf{Request for Proposal (RFP) Response Autobuilder} using \textbf{React, Django, and Microsoft Azure}, automating question extraction, source-backed answer retrieval through \textbf{PNC's Knowledge Search RAG API}, response generation, and publishing into client templates; targeted \textbf{$\sim$80\%} of a \textbf{$\sim$20-hour} manual workflow.}
+
+        \resumeItem{Built a backend \textbf{orchestration layer} to coordinate the RFP workflow and make runtime routing decisions, screening \textbf{LLM-generated responses} against risk and compliance criteria, proposing remediations, and routing flagged outputs to human review.}
+
+        \resumeItem{Shipped \textbf{persona-based chat personalization} for \textbf{Knowledge Search}, a RAG platform serving \textbf{$\sim$20,000 users}, building \textbf{Django REST APIs} for group management, bulk many-to-many user--group assignments, and configurable controls for automatically applying role-specific chat configurations.}
+
+        \resumeItem{Improved the \textbf{reliability and observability} of the platform by patching application vulnerabilities and instrumenting tenant-level usage and \textbf{response latency metrics} in its \textbf{React/Django} Insights dashboard; shipped to production.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Allegheny County DHS (Analytics, Technology, \& Planning)}{Pittsburgh, PA}
+      {Software Engineering Intern}{Feb 2026 -- Apr 2026}
+      \resumeItemListStart
+
+        \resumeItem{Built a full-stack \textbf{Starred Clients} feature in \textbf{Python/Django}, adding a data model, database migration, and \textbf{permission-aware REST API} endpoints for starring, unstarring, and retrieving client dashboard metadata.}
+
+        \resumeItem{Engineered a bug reporting and troubleshooting pipeline using \textbf{TypeScript}, Python/Django, and REST APIs that converts user-submitted issues into Jira tickets with embedded session replay links, shortening the path from user report to triage.}
+
+        \resumeItem{Wrote \textbf{automated unit and integration tests} covering core API flows and edge cases in a production codebase, integrating with existing auditing, role/provider context, and test infrastructure.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Silicon Project}{New York, NY}
+      {Lead Developer \& Board Director}{Jun 2022 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Led a \textbf{10-person engineering team} through the full software development lifecycle---planning, prototyping, code review, testing, and deployment---of a \textbf{JavaScript/React/Node.js} platform with \textbf{PostgreSQL}, Stripe-powered checkout, donor intake workflows, and an internal employee portal serving \textbf{2,600+ users}.}
+
+        \resumeItem{Designed secure \textbf{RESTful API services} for donor tracking and inventory management using \textbf{SQL and JavaScript/TypeScript}, supporting \textbf{\$420K+ in donations} and diverting \textbf{34,000+ lbs of e-waste}.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{NodeBB Open-Source Contributor} $|$ \emph{JavaScript/Node.js, Redis, Git, GitHub Actions, Docker}}{Sep 2025 -- Nov 2025}
+          \resumeItemListStart
+
+            \resumeItem{Delivered a ``Post Anonymously'' plugin in a team fork using an \textbf{Agile workflow with peer code review}, implementing hooks, administrator settings, and permission checks across \textbf{16 merged pull requests}.}
+
+            \resumeItem{Built \textbf{CI/CD automation} with GitHub Actions and introduced mutation testing to strengthen edge-case coverage, improving upstream compatibility and deployment reliability.}
+
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Roi Du Pain Bakery} $|$ \emph{Ruby on Rails, SQLite, Cucumber, MaterializeCSS}}{Jan 2025 -- May 2025}
+          \resumeItemListStart
+
+            \resumeItem{Developed a full-stack e-commerce platform with session-based authentication and \textbf{role-based access control} across five user types (customers, managers, bakers, shippers, guests), enforced at both the controller and view layers.}
+
+            \resumeItem{Built catalog browsing, session-backed cart, checkout with shipping cost calculation, and order-fulfillment workflows plus versioned \textbf{RESTful JSON API} endpoints; verified with \textbf{Cucumber and Minitest suites at 100\% coverage}.}
+
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, SQL, C, Ruby, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Django, Node.js, Ruby on Rails, Next.js, Tailwind CSS, REST APIs} \\
+     \textbf{AI/ML}{: Azure OpenAI, Azure AI Search, Retrieval-Augmented Generation (RAG), LLM APIs, Multi-Agent Systems} \\
+     \textbf{Databases \& Cloud}{: PostgreSQL, MongoDB, SQLite, Microsoft Azure} \\
+     \textbf{Practices}{: Agile, Scrum, code review, unit \& integration testing, CI/CD, technical documentation} \\
+     \textbf{Developer Tools}{: Git, GitHub, Jira, Jenkins, GitHub Actions, Docker, Postman} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
