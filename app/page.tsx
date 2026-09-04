@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const experiences = [
   {
     company: "PNC Financial Services",
@@ -79,9 +81,9 @@ const coursework = [
   "Computer Systems",
   "AI & Machine Learning",
   "Software Engineering Foundations",
+  "Principles of Software Construction",
   "Database Design & Development",
   "Application Design & Development",
-  "Human-Computer Interaction",
 ];
 
 export default function Home() {
@@ -216,7 +218,6 @@ export default function Home() {
                 <span className="project-type">Open Source</span>
               </div>
               <h3>NodeBB Contributor</h3>
-              <p className="project-impact">16 merged pull requests</p>
               <p>
                 Delivered a “Post Anonymously” plugin in a team fork using an
                 Agile, peer-reviewed workflow. Implemented hooks, admin settings,
@@ -246,7 +247,6 @@ export default function Home() {
                 <span className="project-type">Full Stack</span>
               </div>
               <h3>Roi Du Pain Bakery</h3>
-              <p className="project-impact">Five-role commerce platform</p>
               <p>
                 Built session-based authentication and role-based access across
                 customers, managers, bakers, shippers, and guests. Delivered a
@@ -264,8 +264,132 @@ export default function Home() {
           </div>
 
           <div className="project-subheading">
-            <p className="eyebrow">Systems Coursework</p>
-            <h3>Under the hood</h3>
+            <h3>Additional projects</h3>
+          </div>
+          <div className="project-grid project-grid-secondary">
+            <article className="project-card compact">
+              <div className="project-topline">
+                <span className="project-number">03</span>
+                <span className="project-type">Nonprofit Platform</span>
+              </div>
+              <div className="project-media">
+                <Image
+                  src="/projects/tsp.png"
+                  alt="The Silicon Project website"
+                  width={960}
+                  height={500}
+                />
+              </div>
+              <h3>The Silicon Project</h3>
+              <p>
+                Worked on development of a nonprofit platform for donor intake,
+                e-commerce, inventory, and internal operations serving more than
+                2,600 users.
+              </p>
+              <div className="tag-row">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Stripe</span>
+              </div>
+              <a
+                className="text-link"
+                href="https://www.thesiliconproject.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View website ↗
+              </a>
+            </article>
+
+            <article className="project-card compact">
+              <div className="project-topline">
+                <span className="project-number">04</span>
+                <span className="project-type">Education</span>
+              </div>
+              <div className="project-media">
+                <Image
+                  src="/projects/intelliminds.png"
+                  alt="Intelliminds website"
+                  width={960}
+                  height={500}
+                />
+              </div>
+              <h3>Intelliminds</h3>
+              <p>
+                Co-founded an education service and built its website for
+                affordable tutoring, college consulting, and SAT/ACT support.
+              </p>
+              <div className="tag-row">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <a
+                className="text-link"
+                href="https://intelliminds-sooty.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View website ↗
+              </a>
+            </article>
+
+            <article className="project-card compact project-card-no-preview">
+              <div className="project-topline">
+                <span className="project-number">05</span>
+                <span className="project-type">HackCMU</span>
+              </div>
+              <h3>RestroomRanker</h3>
+              <p>
+                Built a crowd-sourced campus app for finding, rating, and
+                reviewing restrooms by building, floor, and accessibility.
+              </p>
+              <div className="tag-row">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Supabase</span>
+                <span>Leaflet</span>
+              </div>
+            </article>
+
+            <article className="project-card compact">
+              <div className="project-topline">
+                <span className="project-number">06</span>
+                <span className="project-type">Biotechnology</span>
+              </div>
+              <div className="project-media">
+                <Image
+                  src="/projects/enyx.png"
+                  alt="ENYX Therapeutics website"
+                  width={960}
+                  height={500}
+                />
+              </div>
+              <h3>ENYX</h3>
+              <p>
+                Built a website for a New York gene therapy startup, focused on
+                a clear product story, accessibility, and a trustworthy visual
+                presence.
+              </p>
+              <div className="tag-row">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Accessibility</span>
+              </div>
+              <a
+                className="text-link"
+                href="https://enyxtherapeutics.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View website ↗
+              </a>
+            </article>
+          </div>
+
+          <div className="project-subheading">
+            <h3>Systems coursework</h3>
             <p>
               Source remains private in accordance with Carnegie Mellon course policies.
             </p>
@@ -273,7 +397,7 @@ export default function Home() {
           <div className="project-grid project-grid-compact">
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">03</span>
+                <span className="project-number">07</span>
                 <span className="project-type">C · Networking</span>
               </div>
               <h3>Concurrent HTTP Proxy Server</h3>
@@ -290,7 +414,7 @@ export default function Home() {
             </article>
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">04</span>
+                <span className="project-number">08</span>
                 <span className="project-type">C · Memory</span>
               </div>
               <h3>Dynamic Memory Allocator</h3>
@@ -343,8 +467,9 @@ export default function Home() {
                 enterprise knowledge search to public-sector case management.
               </p>
               <p>
-                I graduate in May 2027 and am open to full-time software
-                engineering roles in major U.S. cities.
+                I graduate in May 2027 and intend to pursue a master’s degree.
+                I’m actively applying for Summer 2027 software engineering
+                internships and am also open to full-time roles.
               </p>
             </div>
             <aside className="education-card">
@@ -366,8 +491,9 @@ export default function Home() {
           <div className="contact-intro">
             <h2>Contact</h2>
             <p>
-              I’m looking for full-time software engineering roles beginning in
-              May 2027 and am always glad to talk about ambitious engineering work.
+              I’m actively applying for Summer 2027 software engineering
+              internships and full-time roles. If you think I’d be a fit, I’d
+              be glad to connect.
             </p>
             <a className="email-link" href="mailto:aksultan05@gmail.com">
               aksultan05@gmail.com ↗
@@ -397,7 +523,21 @@ export default function Home() {
             </label>
             <label className="full">
               Subject
-              <input type="text" name="subject" placeholder="Full-time opportunity" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Summer 2027 internship or full-time role"
+              />
+            </label>
+            <label className="full">
+              I’m reaching out about
+              <select name="opportunityType" defaultValue="" required>
+                <option value="" disabled>Select one</option>
+                <option value="summer-2027-internship">Summer 2027 internship</option>
+                <option value="full-time-role">Full-time role</option>
+                <option value="project-or-collaboration">Project or collaboration</option>
+                <option value="other">Other</option>
+              </select>
             </label>
             <label className="full">
               Message
