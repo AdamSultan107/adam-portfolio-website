@@ -103,20 +103,16 @@ export default function Home() {
       <main>
         <section className="hero" id="top">
           <div className="hero-content">
-            <p className="eyebrow animate-in">Carnegie Mellon · Class of 2027</p>
-            <h1 className="hero-title animate-in delay-1">
-              Full-stack engineering for complex, high-stakes workflows.
-            </h1>
+            <h1 className="hero-title animate-in">Adam Sultan</h1>
+            <p className="hero-subtitle animate-in delay-1">
+              Full-Stack Software Engineer
+            </p>
             <p className="hero-summary animate-in delay-2">
-              I’m Adam Sultan, a senior at Carnegie Mellon and former PNC GenAI
-              engineering intern. I build production systems across AI,
-              backend, and product—from enterprise RAG to public-service tools.
+              Senior at Carnegie Mellon studying Information Systems and
+              Human-Computer Interaction. Previously a software engineering
+              intern on PNC’s GenAI team, working across backend, AI, and product.
             </p>
-            <p className="hero-note animate-in delay-3">
-              New York + Pittsburgh · Open to full-time software engineering
-              roles in major U.S. cities starting May 2027
-            </p>
-            <div className="hero-actions animate-in delay-4">
+            <div className="hero-actions animate-in delay-3">
               <a
                 className="btn primary"
                 href="/AdamSultanResume.pdf"
@@ -129,7 +125,7 @@ export default function Home() {
                 Explore My Work
               </a>
             </div>
-            <div className="socials animate-in delay-5">
+            <div className="socials animate-in delay-4">
               <a
                 className="social-pill"
                 href="https://www.linkedin.com/in/aksultan05"
@@ -155,11 +151,10 @@ export default function Home() {
 
         <section className="section" id="experience">
           <div className="section-heading">
-            <p className="eyebrow">Experience</p>
-            <h2>Production software with measurable impact.</h2>
+            <h2>Experience</h2>
             <p className="section-lead">
-              Enterprise GenAI, government technology, and nonprofit systems—built
-              with the people who depend on them in mind.
+              Software engineering across financial services, public services,
+              and nonprofit technology.
             </p>
           </div>
           <div className="experience-list">
@@ -209,11 +204,9 @@ export default function Home() {
 
         <section className="section" id="projects">
           <div className="section-heading">
-            <p className="eyebrow">Selected Projects</p>
-            <h2>Engineering beyond the internship.</h2>
+            <h2>Projects</h2>
             <p className="section-lead">
-              Open-source delivery, tested full-stack product work, and systems
-              programming fundamentals.
+              Open-source, full-stack, and systems work.
             </p>
           </div>
           <div className="project-grid project-grid-featured">
@@ -317,8 +310,7 @@ export default function Home() {
 
         <section className="section skills-section" id="skills">
           <div className="section-heading">
-            <p className="eyebrow">Toolkit</p>
-            <h2>From model orchestration to the interface.</h2>
+            <h2>Skills</h2>
           </div>
           <div className="skills-stack">
             {skillGroups.map((group) => (
@@ -336,8 +328,7 @@ export default function Home() {
 
         <section className="section" id="about">
           <div className="section-heading">
-            <p className="eyebrow">About</p>
-            <h2>Engineer, product thinker, and CMU senior.</h2>
+            <h2>About</h2>
           </div>
           <div className="about-grid">
             <div className="about-text">
@@ -373,8 +364,7 @@ export default function Home() {
 
         <section className="section contact-section" id="contact">
           <div className="contact-intro">
-            <p className="eyebrow">Contact</p>
-            <h2>Let’s build something useful.</h2>
+            <h2>Contact</h2>
             <p>
               I’m looking for full-time software engineering roles beginning in
               May 2027 and am always glad to talk about ambitious engineering work.

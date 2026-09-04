@@ -89,29 +89,28 @@ textarea:focus-visible {
 }
 
 main {
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 5vw 5rem;
 }
 
 section {
-  padding: 4.25rem 0;
+  padding: 2rem 0;
 }
 
 .hero {
-  min-height: calc(100vh - 72px);
   display: grid;
-  align-content: center;
+  padding: clamp(3.25rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
   position: relative;
 }
 
 .hero::before {
   content: "";
-  width: min(56vw, 720px);
+  width: min(38vw, 520px);
   aspect-ratio: 1;
   position: absolute;
-  top: -22%;
-  right: -24%;
+  top: -24%;
+  right: -10%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(185, 246, 210, 0.72), rgba(185, 246, 210, 0));
   pointer-events: none;
@@ -137,7 +136,13 @@ section {
   font-weight: 600;
   letter-spacing: -0.065em;
   line-height: 0.98;
-  margin-top: 1.4rem;
+}
+
+.hero-subtitle {
+  color: var(--accent);
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .hero-summary {
@@ -146,12 +151,6 @@ section {
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.6;
   margin-top: 1.8rem;
-}
-
-.hero-note {
-  color: var(--muted);
-  margin-top: 1.1rem;
-  font-size: 0.94rem;
 }
 
 .hero-actions,
@@ -214,7 +213,7 @@ section {
 
 .section-heading {
   max-width: 750px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section-heading h2,
@@ -223,7 +222,7 @@ section {
   font-size: clamp(2.35rem, 5vw, 4.5rem);
   line-height: 1.05;
   letter-spacing: -0.055em;
-  margin-top: 0.9rem;
+  margin-top: 0;
 }
 
 .section-lead {
@@ -676,7 +675,7 @@ section {
 }
 
 .site-footer {
-  max-width: 1240px;
+  max-width: 1320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -732,8 +731,7 @@ section {
   }
 
   .hero {
-    min-height: auto;
-    padding-top: 6rem;
+    padding-top: 3.5rem;
   }
 
   .project-grid,
@@ -753,7 +751,7 @@ section {
   }
 
   section {
-    padding: 3.5rem 0;
+    padding: 1.75rem 0;
   }
 
   .hero-title {
