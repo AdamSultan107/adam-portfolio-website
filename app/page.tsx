@@ -151,24 +151,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="proof-grid animate-in delay-5" aria-label="Selected impact">
-            <div>
-              <strong>~20 hrs → ~4 hrs</strong>
-              <span>RFP workflow target</span>
-            </div>
-            <div>
-              <strong>~20,000</strong>
-              <span>enterprise RAG users</span>
-            </div>
-            <div>
-              <strong>16</strong>
-              <span>merged NodeBB PRs</span>
-            </div>
-            <div>
-              <strong>$420K+</strong>
-              <span>donations supported</span>
-            </div>
-          </div>
         </section>
 
         <section className="section" id="experience">
@@ -378,7 +360,6 @@ export default function Home() {
               <span className="card-label">Education</span>
               <h3>Carnegie Mellon University</h3>
               <p>B.S. Information Systems & Human-Computer Interaction</p>
-              <p>GPA 3.5 / 4.0</p>
               <p className="education-date">Expected May 2027</p>
             </aside>
             <div className="coursework">
