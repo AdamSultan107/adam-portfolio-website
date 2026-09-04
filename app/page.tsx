@@ -337,20 +337,30 @@ export default function Home() {
               </a>
             </article>
 
-            <article className="project-card compact project-card-no-preview">
+            <article className="project-card compact">
               <div className="project-topline">
                 <span className="project-number">05</span>
-                <span className="project-type">HackCMU</span>
+                <span className="project-type">E-commerce</span>
               </div>
-              <h3>RestroomRanker</h3>
+              <div className="project-media">
+                <Image
+                  src="/projects/beats.png"
+                  alt="Beats Store Template website"
+                  width={960}
+                  height={500}
+                />
+              </div>
+              <h3>Beats Store Template</h3>
               <p>
-                Built a crowd-sourced campus app for finding, rating, and
-                reviewing restrooms by building, floor, and accessibility.
+                Built a responsive e-commerce template for selling music and
+                digital kits, with authentication, cart flows, Stripe checkout,
+                and secure post-purchase downloads.
               </p>
               <div className="tag-row">
                 <span>Next.js</span>
                 <span>TypeScript</span>
                 <span>Supabase</span>
+                <span>Stripe</span>
               </div>
             </article>
 

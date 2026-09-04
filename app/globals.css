@@ -486,24 +486,6 @@ section {
   object-position: top;
 }
 
-.project-card-no-preview {
-  background:
-    radial-gradient(circle at 88% 12%, rgba(185, 247, 213, 0.72), transparent 34%),
-    var(--dark) !important;
-  color: #fff;
-}
-
-.project-card-no-preview .project-topline,
-.project-card-no-preview p {
-  color: #d6ded8 !important;
-}
-
-.project-card-no-preview .tag-row span {
-  color: #dce7df;
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
 .skills-stack {
   border-top: 1px solid var(--line);
 }
