@@ -15,7 +15,7 @@ const bodyFont = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Adam Sultan | Full-Stack & GenAI Software Engineer",
   description:
-    "Adam Sultan is a Carnegie Mellon senior and former PNC GenAI engineering intern building production RAG, multi-agent, backend, and full-stack systems.",
+    "Adam Sultan is a Carnegie Mellon senior and former PNC GenAI engineering intern building production RAG, backend, and full-stack systems.",
   keywords: [
     "Adam Sultan",
     "software engineer",

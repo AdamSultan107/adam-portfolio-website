@@ -10,12 +10,12 @@ const experiences = [
     summary:
       "Built production GenAI and full-stack systems for enterprise knowledge workflows.",
     bullets: [
-      "Designed an RFP response autobuilder using React, Django, and Microsoft Azure—automating question extraction, source-backed retrieval through PNC’s Knowledge Search RAG API, response generation, and publishing for roughly 80% of a 20-hour manual workflow.",
-      "Built a backend orchestration layer for runtime routing, screening LLM-generated responses against risk and compliance criteria, proposing remediations, and routing flagged outputs to human review.",
-      "Shipped persona-based chat personalization for Knowledge Search, a RAG platform serving about 20,000 users, with Django REST APIs for group management, bulk user assignments, and role-specific configurations.",
-      "Improved reliability and observability by patching application vulnerabilities and instrumenting tenant-level usage and response-latency metrics in the React/Django Insights dashboard.",
+      "Designed and built an agentic RFP Response Autobuilder using React, Python, and Microsoft Azure, automating question extraction, source-backed retrieval through PNC’s Knowledge Search RAG API, response generation, and publishing for roughly 80% of a ~20-hour manual workflow.",
+      "Built a backend orchestration layer for runtime routing, screening LLM-generated responses against risk and compliance criteria, proposing remediations, and moving flagged outputs to human review.",
+      "Shipped persona-based chat personalization for PNC Knowledge Search, an internal RAG platform serving about 20,000 users across the company, with Django REST APIs for group management, bulk user assignments, and role-specific configurations.",
+      "Improved reliability and observability by documenting and patching application vulnerabilities and displaying tenant-level usage and response latency metrics in the Insights dashboard.",
     ],
-    tags: ["React", "Django / DRF", "Microsoft Azure", "RAG", "LLM APIs"],
+    tags: ["React", "Python", "Django / DRF", "Microsoft Azure", "RAG", "LLM APIs"],
   },
   {
     company: "Allegheny County DHS",
@@ -26,11 +26,11 @@ const experiences = [
     summary:
       "Delivered full-stack features and internal developer tooling in a production public-service platform.",
     bullets: [
-      "Built a permission-aware Starred Clients feature in Python and Django, spanning the data model, migration, and REST API endpoints.",
-      "Engineered a TypeScript and Django bug-reporting and troubleshooting pipeline that turns user issues into Jira tickets with embedded session replay links.",
-      "Wrote automated unit and integration tests covering core API flows and edge cases within the existing auditing, role, and provider test infrastructure.",
+      "Built a full-stack Starred Clients feature using React, TypeScript, and Django, allowing users to mark key clients for quick access; implemented the frontend experience, supporting data model and migration, and permission-aware REST API endpoints for starring, unstarring, and retrieving client data.",
+      "Engineered a bug reporting pipeline using React, TypeScript, and Django that converts user-submitted issues into Jira tickets for the development team, shortening the path from user report to triage.",
+      "Wrote automated test coverage for core API flows and edge cases in the production codebase, integrating with existing auditing, role/provider context, and test infrastructure.",
     ],
-    tags: ["Python", "Django", "TypeScript", "REST APIs", "Jira"],
+    tags: ["React", "TypeScript", "Django", "REST APIs", "Jira"],
   },
   {
     company: "The Silicon Project",
@@ -56,7 +56,7 @@ const skillGroups = [
   },
   {
     label: "AI / ML",
-    skills: ["Azure OpenAI", "Azure AI Search", "RAG", "LLM APIs", "Multi-Agent Systems"],
+    skills: ["Azure OpenAI", "Azure AI Search", "RAG", "LLM APIs"],
   },
   {
     label: "Frameworks",
@@ -84,6 +84,8 @@ const coursework = [
   "Principles of Software Construction",
   "Database Design & Development",
   "Application Design & Development",
+  "Mobile App Design & Development (In Progress)",
+  "Web App Development (In Progress)",
 ];
 
 export default function Home() {
@@ -349,7 +351,6 @@ export default function Home() {
                 <span>Next.js</span>
                 <span>TypeScript</span>
                 <span>Supabase</span>
-                <span>Leaflet</span>
               </div>
             </article>
 
