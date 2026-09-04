@@ -526,7 +526,6 @@ export default function Home() {
               <input
                 type="text"
                 name="subject"
-                placeholder="Summer 2027 internship or full-time role"
               />
             </label>
             <label className="full">
