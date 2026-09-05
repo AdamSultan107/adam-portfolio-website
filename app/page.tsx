@@ -233,14 +233,6 @@ export default function Home() {
                 <span>GitHub Actions</span>
                 <span>Docker</span>
               </div>
-              <a
-                className="text-link"
-                href="https://github.com/NodeBB/NodeBB"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explore NodeBB ↗
-              </a>
             </article>
 
             <article className="project-card">
@@ -525,7 +517,7 @@ export default function Home() {
               <input type="text" name="firstName" autoComplete="given-name" required />
             </label>
             <label>
-              Last Name
+              Last Name (optional)
               <input type="text" name="lastName" autoComplete="family-name" />
             </label>
             <label className="full">
@@ -533,11 +525,8 @@ export default function Home() {
               <input type="email" name="email" autoComplete="email" required />
             </label>
             <label className="full">
-              Subject
-              <input
-                type="text"
-                name="subject"
-              />
+              Subject (optional)
+              <input type="text" name="subject" />
             </label>
             <label className="full">
               I’m reaching out about

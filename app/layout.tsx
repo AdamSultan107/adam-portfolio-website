@@ -13,6 +13,7 @@ const bodyFont = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://adam-portfolio-website-zeta.vercel.app"),
   title: "Adam Sultan | Full-Stack & GenAI Software Engineer",
   description:
     "Adam Sultan is a Carnegie Mellon senior and former PNC GenAI engineering intern building production RAG, backend, and full-stack systems.",
@@ -29,12 +30,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Adam Sultan" }],
   creator: "Adam Sultan",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Adam Sultan | Full-Stack & GenAI Software Engineer",
     description:
       "CMU senior and former PNC GenAI engineering intern building production RAG, backend, and full-stack systems.",
     type: "website",
     locale: "en_US",
+    url: "/",
+    siteName: "Adam Sultan",
   },
   twitter: {
     card: "summary",

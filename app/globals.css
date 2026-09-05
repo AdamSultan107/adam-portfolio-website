@@ -37,9 +37,14 @@ a {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
+select:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid var(--accent-bright);
+  outline: 3px solid var(--accent);
   outline-offset: 3px;
+}
+
+.contact-section :focus-visible {
+  outline-color: var(--accent-bright);
 }
 
 .page {
@@ -54,7 +59,7 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.1rem max(5vw, calc((100vw - 1240px) / 2));
+  padding: 1.1rem max(5vw, calc((100vw - 1320px) / 2 + 5vw));
   background: rgba(245, 244, 239, 0.9);
   border-bottom: 1px solid rgba(17, 20, 16, 0.1);
   backdrop-filter: blur(16px);
@@ -91,7 +96,7 @@ textarea:focus-visible {
 main {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 5vw 5rem;
+  padding: 0 5vw 1.5rem;
 }
 
 section {
@@ -604,7 +609,7 @@ section {
   gap: clamp(2.5rem, 7vw, 6rem);
   align-items: start;
   padding: clamp(2rem, 6vw, 5rem);
-  margin: 4rem 0;
+  margin: 2.5rem 0;
   border-radius: 32px;
   color: #fff;
   background: var(--dark);
@@ -627,6 +632,10 @@ section {
   font-size: 1.08rem;
   font-weight: 700;
   margin-top: 1.5rem;
+}
+
+.contact-section .email-link:hover {
+  color: #fff;
 }
 
 .contact-form {
@@ -764,6 +773,10 @@ section {
 }
 
 @media (max-width: 820px) {
+  html {
+    scroll-padding-top: 130px;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
