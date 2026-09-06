@@ -3,7 +3,6 @@
 % Author : Adam Sultan
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
-% BASE VERSION -- tailor from a copy, don't edit this file
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
@@ -107,7 +106,7 @@
       {Carnegie Mellon University}{Pittsburgh, PA}
       {B.S. in Information Systems \& Human-Computer Interaction; GPA: 3.5/4.0}{Expected May 2027}
     \vspace{2pt}
-    \item\small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Computer Systems, Software Engineering Foundations, Database Design \& Development, Application Design \& Development, AI \& Machine Learning, Human-Computer Interaction}
+    \item\small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Computer Systems, Principles of Software Construction, Software Engineering Foundations, Database Design \& Development, Application Design \& Development, AI \& Machine Learning}
     \vspace{-4pt}
   \resumeSubHeadingListEnd
 
@@ -120,13 +119,13 @@
       {Software Engineering Intern -- GenAI Engineering Team}{Jun 2026 -- Aug 2026}
       \resumeItemListStart
 
-        \resumeItem{Designed and built a \textbf{Request for Proposal (RFP) Response Autobuilder} using \textbf{React, Django, and Microsoft Azure}, automating question extraction, source-backed answer retrieval through \textbf{PNC's Knowledge Search RAG API}, response generation, and publishing into client templates; targeted \textbf{$\sim$80\%} of a \textbf{$\sim$20-hour} manual workflow.}
+        \resumeItem{Designed and built an \textbf{agentic Request for Proposal (RFP) Response Autobuilder} using \textbf{React, Python, and Microsoft Azure}, automating question extraction, source-backed retrieval through PNC's Knowledge Search RAG API, response generation, and publishing into client templates; targeted \textbf{$\sim$80\%} of a \textbf{$\sim$20-hour} manual workflow.}
 
-        \resumeItem{Built a backend \textbf{orchestration layer} to coordinate the RFP workflow and make runtime routing decisions, screening \textbf{LLM-generated responses} against risk and compliance criteria, proposing remediations, and routing flagged outputs to human review.}
+        \resumeItem{Engineered a \textbf{backend orchestration layer} to coordinate the RFP workflow and make runtime routing decisions, screening LLM-generated responses against risk and compliance criteria, proposing remediations, and routing flagged outputs to human review.}
 
-        \resumeItem{Shipped \textbf{persona-based chat personalization} for \textbf{Knowledge Search}, a RAG platform serving \textbf{$\sim$20,000 users}, building \textbf{Django REST APIs} for group management, bulk many-to-many user--group assignments, and configurable controls for automatically applying role-specific chat configurations.}
+        \resumeItem{Shipped \textbf{persona-based chat personalization} for the \textbf{PNC Knowledge Search platform}, an internal RAG platform serving roughly \textbf{20,000 users} across the company, with \textbf{Django REST APIs} for group management, bulk user assignments, and role-specific configurations.}
 
-        \resumeItem{Improved the \textbf{reliability and observability} of the platform by patching application vulnerabilities and instrumenting tenant-level usage and \textbf{response latency metrics} in its \textbf{React/Django} Insights dashboard; shipped to production.}
+        \resumeItem{Improved \textbf{reliability and observability} by documenting and patching application vulnerabilities and adding tenant-level usage and response-latency metrics to the platform's \textbf{React/Django Insights dashboard}.}
 
       \resumeItemListEnd
 
@@ -135,11 +134,11 @@
       {Software Engineering Intern}{Feb 2026 -- Apr 2026}
       \resumeItemListStart
 
-        \resumeItem{Built a full-stack \textbf{Starred Clients} feature in \textbf{Python/Django}, adding a data model, database migration, and \textbf{permission-aware REST API} endpoints for starring, unstarring, and retrieving client dashboard metadata.}
+        \resumeItem{Developed a full-stack \textbf{Starred Clients} feature using \textbf{React, TypeScript, and Django}, letting users mark key clients for quick access; implemented the frontend, supporting data model and migration, and permission-aware \textbf{REST API} endpoints for starring, unstarring, and retrieving client data.}
 
-        \resumeItem{Engineered a bug reporting and troubleshooting pipeline using \textbf{TypeScript}, Python/Django, and REST APIs that converts user-submitted issues into Jira tickets with embedded session replay links, shortening the path from user report to triage.}
+        \resumeItem{Engineered a \textbf{bug reporting pipeline} using \textbf{React, TypeScript, and Django} that converts user-submitted issues into Jira tickets with embedded session replay links, shortening the path from user report to triage.}
 
-        \resumeItem{Wrote \textbf{automated unit and integration tests} covering core API flows and edge cases in a production codebase, integrating with existing auditing, role/provider context, and test infrastructure.}
+        \resumeItem{Wrote \textbf{automated test coverage} for core API flows and edge cases in a production codebase, integrating with existing auditing, role/provider context, and test infrastructure.}
 
       \resumeItemListEnd
 
@@ -148,7 +147,7 @@
       {Lead Developer \& Board Director}{Jun 2022 -- Present}
       \resumeItemListStart
 
-        \resumeItem{Led a \textbf{10-person engineering team} through the full software development lifecycle---planning, prototyping, code review, testing, and deployment---of a \textbf{JavaScript/React/Node.js} platform with \textbf{PostgreSQL}, Stripe-powered checkout, donor intake workflows, and an internal employee portal serving \textbf{2,600+ users}.}
+        \resumeItem{Lead a \textbf{10-person engineering team} through the full software development lifecycle---planning, prototyping, code review, testing, and deployment---of a \textbf{JavaScript/React/Node.js} platform with \textbf{PostgreSQL}, Stripe-powered checkout, donor intake workflows, and an internal employee portal serving \textbf{2,600+ users}.}
 
         \resumeItem{Designed secure \textbf{RESTful API services} for donor tracking and inventory management using \textbf{SQL and JavaScript/TypeScript}, supporting \textbf{\$420K+ in donations} and diverting \textbf{34,000+ lbs of e-waste}.}
 
@@ -161,22 +160,24 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
+          {\textbf{TradeSync} $|$ \emph{Java, Spring Boot, React, TypeScript, PostgreSQL, Docker}}{Apr 2026 -- Present}
+          \resumeItemListStart
+
+            \resumeItem{Built a full-stack \textbf{trade reconciliation platform} using \textbf{Java, Spring Boot, React, TypeScript, and PostgreSQL} to compare internal and external CSV records and detect missing trades, duplicates, and financial mismatches.}
+
+            \resumeItem{Designed \textbf{REST APIs} and a \textbf{Flyway-managed persistence layer} for reconciliation history, source records, exception tracking, resolution statuses, and auditable review notes.}
+
+            \resumeItem{Implemented Apache Commons CSV validation, \textbf{37 automated backend tests}, \textbf{Docker Compose} infrastructure, and a responsive Tailwind CSS interface for uploading files, filtering results, and reviewing exceptions.}
+
+          \resumeItemListEnd
+
+      \resumeProjectHeading
           {\textbf{NodeBB Open-Source Contributor} $|$ \emph{JavaScript/Node.js, Redis, Git, GitHub Actions, Docker}}{Sep 2025 -- Nov 2025}
           \resumeItemListStart
 
             \resumeItem{Delivered a ``Post Anonymously'' plugin in a team fork using an \textbf{Agile workflow with peer code review}, implementing hooks, administrator settings, and permission checks across \textbf{16 merged pull requests}.}
 
             \resumeItem{Built \textbf{CI/CD automation} with GitHub Actions and introduced mutation testing to strengthen edge-case coverage, improving upstream compatibility and deployment reliability.}
-
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Roi Du Pain Bakery} $|$ \emph{Ruby on Rails, SQLite, Cucumber, MaterializeCSS}}{Jan 2025 -- May 2025}
-          \resumeItemListStart
-
-            \resumeItem{Developed a full-stack e-commerce platform with session-based authentication and \textbf{role-based access control} across five user types (customers, managers, bakers, shippers, guests), enforced at both the controller and view layers.}
-
-            \resumeItem{Built catalog browsing, session-backed cart, checkout with shipping cost calculation, and order-fulfillment workflows plus versioned \textbf{RESTful JSON API} endpoints; verified with \textbf{Cucumber and Minitest suites at 100\% coverage}.}
 
           \resumeItemListEnd
 
@@ -187,10 +188,10 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, Python, JavaScript, TypeScript, SQL, C, Ruby, HTML/CSS} \\
-     \textbf{Frameworks}{: React, Django, Node.js, Ruby on Rails, Next.js, Tailwind CSS, REST APIs} \\
-     \textbf{AI/ML}{: Azure OpenAI, Azure AI Search, Retrieval-Augmented Generation (RAG), LLM APIs, Multi-Agent Systems} \\
-     \textbf{Databases \& Cloud}{: PostgreSQL, MongoDB, SQLite, Microsoft Azure} \\
-     \textbf{Practices}{: Agile, Scrum, code review, unit \& integration testing, CI/CD, technical documentation} \\
+     \textbf{Frameworks}{: React, Spring Boot, Django, Node.js, Ruby on Rails, Next.js, Tailwind CSS} \\
+     \textbf{AI/ML}{: Azure OpenAI, Azure AI Search, Retrieval-Augmented Generation (RAG), LLM APIs} \\
+     \textbf{Databases \& Cloud}{: PostgreSQL, MongoDB, SQLite, Redis, Microsoft Azure} \\
+     \textbf{Practices}{: Agile, code review, unit \& integration testing, CI/CD, technical documentation} \\
      \textbf{Developer Tools}{: Git, GitHub, Jira, Jenkins, GitHub Actions, Docker, Postman} \\
     }}
  \end{itemize}

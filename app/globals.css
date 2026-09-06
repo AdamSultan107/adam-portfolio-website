@@ -376,6 +376,10 @@ section {
   gap: 1.2rem;
 }
 
+.project-grid-featured {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .project-grid-secondary {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }

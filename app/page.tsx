@@ -60,7 +60,7 @@ const skillGroups = [
   },
   {
     label: "Frameworks",
-    skills: ["React", "Django", "Node.js", "Ruby on Rails", "Next.js", "Tailwind CSS", "REST APIs"],
+    skills: ["React", "Django", "Node.js", "Ruby on Rails", "Next.js", "Tailwind CSS", "Spring Boot"],
   },
   {
     label: "Data & Cloud",
@@ -68,7 +68,7 @@ const skillGroups = [
   },
   {
     label: "Practices",
-    skills: ["Agile", "Scrum", "Code Review", "Unit & Integration Testing", "CI/CD", "Technical Documentation"],
+    skills: ["Agile", "Code Review", "Unit & Integration Testing", "CI/CD", "Technical Documentation"],
   },
   {
     label: "Developer Tools",
@@ -255,6 +255,31 @@ export default function Home() {
               </div>
               <p className="project-note">100% verified Cucumber and Minitest coverage</p>
             </article>
+
+            <article className="project-card">
+              <div className="project-topline">
+                <span className="project-number">03</span>
+                <span className="project-type">Full Stack · Finance</span>
+              </div>
+              <h3>TradeSync</h3>
+              <p>
+                Built a trade reconciliation platform that compares internal
+                and external CSV records to surface missing trades, duplicates,
+                and financial mismatches. Designed REST APIs and a
+                Flyway-managed PostgreSQL model for reconciliation history,
+                exceptions, resolution statuses, and auditable review notes.
+                Added CSV validation, 37 automated backend tests, Docker Compose,
+                and a responsive review interface.
+              </p>
+              <div className="tag-row">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+            </article>
           </div>
 
           <div className="project-subheading">
@@ -263,7 +288,7 @@ export default function Home() {
           <div className="project-grid project-grid-secondary">
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">03</span>
+                <span className="project-number">04</span>
                 <span className="project-type">Nonprofit Platform</span>
               </div>
               <div className="project-media">
@@ -298,7 +323,7 @@ export default function Home() {
 
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">04</span>
+                <span className="project-number">05</span>
                 <span className="project-type">Education</span>
               </div>
               <div className="project-media">
@@ -331,7 +356,7 @@ export default function Home() {
 
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">05</span>
+                <span className="project-number">06</span>
                 <span className="project-type">E-commerce</span>
               </div>
               <div className="project-media">
@@ -358,7 +383,7 @@ export default function Home() {
 
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">06</span>
+                <span className="project-number">07</span>
                 <span className="project-type">Biotechnology</span>
               </div>
               <div className="project-media">
@@ -400,7 +425,7 @@ export default function Home() {
           <div className="project-grid project-grid-compact">
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">07</span>
+                <span className="project-number">08</span>
                 <span className="project-type">C · Networking</span>
               </div>
               <h3>Concurrent HTTP Proxy Server</h3>
@@ -417,7 +442,7 @@ export default function Home() {
             </article>
             <article className="project-card compact">
               <div className="project-topline">
-                <span className="project-number">08</span>
+                <span className="project-number">09</span>
                 <span className="project-type">C · Memory</span>
               </div>
               <h3>Dynamic Memory Allocator</h3>
