@@ -15,7 +15,14 @@ const experiences = [
       "Shipped persona-based chat personalization for PNC Knowledge Search, an internal RAG platform serving about 20,000 users across the company, with Django REST APIs for group management, bulk user assignments, and role-specific configurations.",
       "Improved reliability and observability by documenting and patching application vulnerabilities and displaying tenant-level usage and response latency metrics in the Insights dashboard.",
     ],
-    tags: ["React", "Python", "Django / DRF", "Microsoft Azure", "RAG", "LLM APIs"],
+    tags: [
+      "React",
+      "Python",
+      "Django / DRF",
+      "Microsoft Azure",
+      "RAG",
+      "LLM APIs",
+    ],
   },
   {
     company: "Allegheny County DHS",
@@ -52,7 +59,16 @@ const experiences = [
 const skillGroups = [
   {
     label: "Languages",
-    skills: ["Java", "Python", "C", "JavaScript", "TypeScript", "SQL", "Ruby", "HTML / CSS"],
+    skills: [
+      "Java",
+      "Python",
+      "C",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "Ruby",
+      "HTML / CSS",
+    ],
   },
   {
     label: "AI / ML",
@@ -60,7 +76,15 @@ const skillGroups = [
   },
   {
     label: "Frameworks",
-    skills: ["React", "Django", "Node.js", "Ruby on Rails", "Next.js", "Tailwind CSS", "Spring Boot"],
+    skills: [
+      "React",
+      "Django",
+      "Node.js",
+      "Ruby on Rails",
+      "Next.js",
+      "Tailwind CSS",
+      "Spring Boot",
+    ],
   },
   {
     label: "Data & Cloud",
@@ -68,11 +92,27 @@ const skillGroups = [
   },
   {
     label: "Practices",
-    skills: ["Agile", "Code Review", "Unit & Integration Testing", "CI/CD", "Technical Documentation"],
+    skills: [
+      "Agile",
+      "Code Review",
+      "Unit & Integration Testing",
+      "CI/CD",
+      "Technical Documentation",
+    ],
   },
   {
     label: "Developer Tools",
-    skills: ["Git", "GitHub", "Jenkins", "GitHub Actions", "Docker", "Postman", "Jira", "Cucumber", "Minitest"],
+    skills: [
+      "Git",
+      "GitHub",
+      "Jenkins",
+      "GitHub Actions",
+      "Docker",
+      "Postman",
+      "Jira",
+      "Cucumber",
+      "Minitest",
+    ],
   },
 ];
 
@@ -114,7 +154,8 @@ export default function Home() {
             <p className="hero-summary animate-in delay-2">
               Senior at Carnegie Mellon studying Information Systems and
               Human-Computer Interaction. Previously a software engineering
-              intern on PNC’s GenAI team, working across backend, AI, and product.
+              intern on PNC’s GenAI team, working across backend, AI, and
+              product.
             </p>
             <div className="hero-actions animate-in delay-3">
               <a
@@ -169,7 +210,9 @@ export default function Home() {
               >
                 <div className="experience-meta">
                   <div>
-                    {experience.featured && <span className="lead-badge">Featured experience</span>}
+                    {experience.featured && (
+                      <span className="lead-badge">Featured experience</span>
+                    )}
                     <h3>{experience.company}</h3>
                     <p className="experience-role">{experience.role}</p>
                   </div>
@@ -222,9 +265,9 @@ export default function Home() {
               <h3>NodeBB Contributor</h3>
               <p>
                 Delivered a “Post Anonymously” plugin in a team fork using an
-                Agile, peer-reviewed workflow. Implemented hooks, admin settings,
-                and permission checks, then strengthened compatibility with CI/CD
-                automation and mutation testing.
+                Agile, peer-reviewed workflow. Implemented hooks, admin
+                settings, and permission checks, then strengthened compatibility
+                with CI/CD automation and mutation testing.
               </p>
               <div className="tag-row">
                 <span>JavaScript</span>
@@ -253,7 +296,9 @@ export default function Home() {
                 <span>Cucumber</span>
                 <span>Minitest</span>
               </div>
-              <p className="project-note">100% verified Cucumber and Minitest coverage</p>
+              <p className="project-note">
+                100% verified Cucumber and Minitest coverage
+              </p>
             </article>
 
             <article className="project-card">
@@ -263,13 +308,13 @@ export default function Home() {
               </div>
               <h3>TradeSync</h3>
               <p>
-                Built a trade reconciliation platform that compares internal
-                and external CSV records to surface missing trades, duplicates,
-                and financial mismatches. Designed REST APIs and a
-                Flyway-managed PostgreSQL model for reconciliation history,
-                exceptions, resolution statuses, and auditable review notes.
-                Added CSV validation, 37 automated backend tests, Docker Compose,
-                and a responsive review interface.
+                Built a trade reconciliation platform that compares internal and
+                external CSV records to surface missing trades, duplicates, and
+                financial mismatches. Designed REST APIs and a Flyway-managed
+                PostgreSQL model for reconciliation history, exceptions,
+                resolution statuses, and auditable review notes. Added CSV
+                validation, 37 automated backend tests, Docker Compose, and a
+                responsive review interface.
               </p>
               <div className="tag-row">
                 <span>Java</span>
@@ -279,6 +324,14 @@ export default function Home() {
                 <span>PostgreSQL</span>
                 <span>Docker</span>
               </div>
+              <a
+                className="text-link"
+                href="https://github.com/AdamSultan107/tradesync"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View GitHub ↗
+              </a>
             </article>
           </div>
 
@@ -419,7 +472,8 @@ export default function Home() {
           <div className="project-subheading">
             <h3>Systems coursework</h3>
             <p>
-              Source remains private in accordance with Carnegie Mellon course policies.
+              Source remains private in accordance with Carnegie Mellon course
+              policies.
             </p>
           </div>
           <div className="project-grid project-grid-compact">
@@ -470,7 +524,9 @@ export default function Home() {
                 <div className="skills-label">{group.label}</div>
                 <div className="skill-items">
                   {group.skills.map((skill) => (
-                    <span className="skill-item" key={skill}>{skill}</span>
+                    <span className="skill-item" key={skill}>
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -495,8 +551,8 @@ export default function Home() {
                 enterprise knowledge search to public-sector case management.
               </p>
               <p>
-                I graduate in May 2027 and intend to pursue a master’s degree.
-                I’m actively applying for Summer 2027 software engineering
+                I graduate in 2027 and intend to pursue a master’s degree. I’m
+                actively applying for Summer 2027 software engineering
                 internships and am also open to full-time roles.
               </p>
             </div>
@@ -504,12 +560,14 @@ export default function Home() {
               <span className="card-label">Education</span>
               <h3>Carnegie Mellon University</h3>
               <p>B.S. Information Systems & Human-Computer Interaction</p>
-              <p className="education-date">Expected May 2027</p>
+              <p className="education-date">Expected Graduation 2027</p>
             </aside>
             <div className="coursework">
               <h3>Relevant Coursework</h3>
               <div className="coursework-list">
-                {coursework.map((course) => <span key={course}>{course}</span>)}
+                {coursework.map((course) => (
+                  <span key={course}>{course}</span>
+                ))}
               </div>
             </div>
           </div>
@@ -520,8 +578,8 @@ export default function Home() {
             <h2>Contact</h2>
             <p>
               I’m actively applying for Summer 2027 software engineering
-              internships and full-time roles. If you think I’d be a fit, I’d
-              be glad to connect.
+              internships and full-time roles. If you think I’d be a fit, I’d be
+              glad to connect.
             </p>
             <a className="email-link" href="mailto:aksultan05@gmail.com">
               aksultan05@gmail.com ↗
@@ -532,14 +590,28 @@ export default function Home() {
             action="https://formspree.io/f/xaqdoroa"
             method="POST"
           >
-            <input type="hidden" name="_subject" value="New portfolio message" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New portfolio message"
+            />
             <label className="honeypot" aria-hidden="true">
               Leave this field empty
-              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+              <input
+                type="text"
+                name="_gotcha"
+                tabIndex={-1}
+                autoComplete="off"
+              />
             </label>
             <label>
               First Name
-              <input type="text" name="firstName" autoComplete="given-name" required />
+              <input
+                type="text"
+                name="firstName"
+                autoComplete="given-name"
+                required
+              />
             </label>
             <label>
               Last Name (optional)
@@ -556,10 +628,16 @@ export default function Home() {
             <label className="full">
               I’m reaching out about
               <select name="opportunityType" defaultValue="" required>
-                <option value="" disabled>Select one</option>
-                <option value="summer-2027-internship">Summer 2027 internship</option>
+                <option value="" disabled>
+                  Select one
+                </option>
+                <option value="summer-2027-internship">
+                  Summer 2027 internship
+                </option>
                 <option value="full-time-role">Full-time role</option>
-                <option value="project-or-collaboration">Project or collaboration</option>
+                <option value="project-or-collaboration">
+                  Project or collaboration
+                </option>
                 <option value="other">Other</option>
               </select>
             </label>
@@ -567,7 +645,9 @@ export default function Home() {
               Message
               <textarea name="message" rows={5} required />
             </label>
-            <button className="btn primary" type="submit">Send Message</button>
+            <button className="btn primary" type="submit">
+              Send Message
+            </button>
             <p className="form-fallback">
               If the form does not open, email me directly at{" "}
               <a href="mailto:aksultan05@gmail.com">aksultan05@gmail.com</a>.
@@ -579,8 +659,20 @@ export default function Home() {
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Adam Sultan</p>
         <div>
-          <a href="https://github.com/aksultan05" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/aksultan05" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a
+            href="https://github.com/aksultan05"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aksultan05"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
           <a href="mailto:aksultan05@gmail.com">Email</a>
         </div>
       </footer>
